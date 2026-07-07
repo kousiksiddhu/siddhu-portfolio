@@ -1,0 +1,243 @@
+/* ==========================================================================
+   Skills Section — Bento Grid, Domain Accent Colors, Tags
+   ========================================================================== */
+
+/* ── Skills Bento Grid ───────────────────────────────────────────────────── */
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(200px, auto);
+  gap: var(--space-6);
+}
+
+/* ── Skill Card ──────────────────────────────────────────────────────────── */
+
+.skill-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius-lg);
+  padding: var(--space-8);
+  position: relative;
+  overflow: hidden;
+  transition: all var(--duration-base) var(--ease-out);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+/* Top accent line */
+.skill-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--glass-border);
+  transition: background var(--duration-base) ease;
+}
+
+/* Subtle glow on hover */
+.skill-card::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, var(--skill-glow, transparent) 0%, transparent 50%);
+  opacity: 0;
+  transition: opacity var(--duration-slow) ease;
+  pointer-events: none;
+}
+
+.skill-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--skill-border, rgba(255, 255, 255, 0.12));
+  background: var(--skill-bg-hover, rgba(255, 255, 255, 0.05));
+}
+
+.skill-card:hover::before {
+  background: var(--skill-accent, var(--color-amber));
+}
+
+.skill-card:hover::after {
+  opacity: 1;
+}
+
+/* ── Domain-Specific Colors ──────────────────────────────────────────────── */
+
+/* Leadership — Amber */
+.skill-card[data-domain="leadership"],
+.skill-card--leadership {
+  --skill-accent: var(--color-amber);
+  --skill-border: rgba(245, 158, 11, 0.2);
+  --skill-bg-hover: rgba(245, 158, 11, 0.06);
+  --skill-glow: rgba(245, 158, 11, 0.08);
+}
+
+/* Architecture — Teal */
+.skill-card[data-domain="architecture"],
+.skill-card--architecture {
+  --skill-accent: var(--color-teal);
+  --skill-border: rgba(45, 212, 191, 0.2);
+  --skill-bg-hover: rgba(45, 212, 191, 0.06);
+  --skill-glow: rgba(45, 212, 191, 0.08);
+}
+
+/* Frontend — Violet */
+.skill-card[data-domain="frontend"],
+.skill-card--frontend {
+  --skill-accent: var(--color-violet);
+  --skill-border: rgba(139, 92, 246, 0.2);
+  --skill-bg-hover: rgba(139, 92, 246, 0.06);
+  --skill-glow: rgba(139, 92, 246, 0.08);
+}
+
+/* Backend — Emerald */
+.skill-card[data-domain="backend"],
+.skill-card--backend {
+  --skill-accent: var(--color-emerald);
+  --skill-border: rgba(16, 185, 129, 0.2);
+  --skill-bg-hover: rgba(16, 185, 129, 0.06);
+  --skill-glow: rgba(16, 185, 129, 0.08);
+}
+
+/* DevOps — Rose */
+.skill-card[data-domain="devops"],
+.skill-card--devops {
+  --skill-accent: var(--color-rose);
+  --skill-border: rgba(244, 63, 94, 0.2);
+  --skill-bg-hover: rgba(244, 63, 94, 0.06);
+  --skill-glow: rgba(244, 63, 94, 0.08);
+}
+
+/* Domains — Sky */
+.skill-card[data-domain="domains"],
+.skill-card--domains {
+  --skill-accent: var(--color-sky);
+  --skill-border: rgba(14, 165, 233, 0.2);
+  --skill-bg-hover: rgba(14, 165, 233, 0.06);
+  --skill-glow: rgba(14, 165, 233, 0.08);
+}
+
+/* ── Skill Card Header ───────────────────────────────────────────────────── */
+
+.skill-card-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  margin-bottom: var(--space-2);
+}
+
+/* ── Skill Card Icon ─────────────────────────────────────────────────────── */
+
+.skill-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-md);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  font-size: 1.4rem;
+  color: var(--color-text-muted);
+  transition: var(--transition-base);
+  flex-shrink: 0;
+}
+
+.skill-card:hover .skill-icon {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--skill-accent, var(--color-amber));
+  color: var(--skill-accent, var(--color-amber));
+  box-shadow: 0 0 20px var(--skill-glow, rgba(245, 158, 11, 0.1));
+}
+
+/* ── Skill Card Title ────────────────────────────────────────────────────── */
+
+.skill-title {
+  font-family: var(--font-heading);
+  font-size: var(--text-xl);
+  font-weight: var(--weight-semibold);
+  color: var(--color-text);
+  line-height: var(--leading-snug);
+  margin: 0;
+}
+
+.skill-description {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  line-height: var(--leading-normal);
+}
+
+/* ── Skill Tags ──────────────────────────────────────────────────────────── */
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-top: auto;
+}
+
+.skill-tag {
+  display: inline-flex;
+  align-items: center;
+  font-size: var(--text-xs);
+  font-weight: var(--weight-medium);
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-full);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  color: var(--color-text-muted);
+  transition: var(--transition-base);
+  white-space: nowrap;
+}
+
+.skill-card:hover .skill-tag {
+  border-color: rgba(255, 255, 255, 0.12);
+  color: var(--color-text);
+}
+
+/* ── Bento Spanning (optional feature cells) ─────────────────────────────── */
+
+.skill-card--wide {
+  grid-column: span 2;
+}
+
+.skill-card--tall {
+  grid-row: span 2;
+}
+
+/* ── Responsive ──────────────────────────────────────────────────────────── */
+
+@media (max-width: 767px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  .skill-card--wide {
+    grid-column: span 1;
+  }
+
+  .skill-card--tall {
+    grid-row: span 1;
+  }
+
+  .skill-card {
+    padding: var(--space-6);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-5);
+  }
+
+  .skill-card--wide {
+    grid-column: span 2;
+  }
+}
