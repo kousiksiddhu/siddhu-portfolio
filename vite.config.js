@@ -9,7 +9,7 @@ export default defineConfig({
     assetsDir: 'assets',
   },
   server: {
-    port: 3000,
-    open: true,
+    port: Number(process.env.PORT) || 3000,
+    open: false,
   },
 });

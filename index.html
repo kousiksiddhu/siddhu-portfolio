@@ -6,989 +6,668 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- SEO -->
-  <title>Siddhu Nallasivam — Technical Engineering Manager</title>
+  <title>Siddhu Nallasivam — Engineering Leader for the AI Era</title>
   <meta name="description"
-    content="Technical Engineering Manager with 11+ years driving delivery excellence, AI-enabled engineering, and team performance across iGaming, healthcare, financial services, and e-commerce." />
+    content="Technical Engineering Manager with 11+ years driving AI-enabled engineering, delivery excellence, and team performance across iGaming, healthcare, financial services, and e-commerce." />
   <meta name="keywords"
-    content="Siddhu Nallasivam, Technical Engineering Manager, Solutions Architect, AI-Enabled Engineering, Cloud Native, AWS, React, Node.js" />
+    content="Siddhu Nallasivam, Technical Engineering Manager, AI-Enabled Engineering, AI Development SDLC, Solutions Architect, AWS, React, Swift, Engineering Leadership" />
   <meta name="author" content="Siddhu Nallasivam" />
+  <meta name="theme-color" content="#07080b" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Siddhu Nallasivam — Technical Engineering Manager" />
+  <meta property="og:title" content="Siddhu Nallasivam — Engineering Leader for the AI Era" />
   <meta property="og:description"
-    content="Technical Engineering Manager with 11+ years driving delivery excellence, AI-enabled engineering, and team performance across regulated industries." />
+    content="11+ years shipping across regulated industries. AI Dev SDLC architect. 50+ engineers mentored. 90%+ CSAT." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="/assets/avatar.jpg" />
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Siddhu Nallasivam",
+    "jobTitle": "Technical Engineering Manager",
+    "email": "mailto:kousiksiddhu@gmail.com",
+    "telephone": "+91 93848 84604",
+    "address": { "@type": "PostalAddress", "addressLocality": "Coimbatore", "addressCountry": "IN" },
+    "sameAs": ["https://linkedin.com/in/siddhu-nallasivam"],
+    "knowsAbout": ["Engineering Management", "AI-Enabled Engineering", "Cloud Architecture", "AWS", "iOS Development", "DevOps"]
+  }
+  </script>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:ital,wght@0,400;0,500;1,400&family=Instrument+Serif:ital@0;1&display=swap"
     rel="stylesheet" />
 
-  <!-- Icons -->
-  <script src="https://unpkg.com/lucide@latest"></script>
-
-  <!-- GSAP -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-
-  <!-- Styles -->
-  <link rel="stylesheet" href="/css/base.css" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/css/style.css" />
 </head>
 
 <body>
+  <a class="skip-link" href="#about">Skip to content</a>
 
-  <!-- ═══════════════════════════════════════════════ -->
-  <!-- NAVIGATION                                      -->
-  <!-- ═══════════════════════════════════════════════ -->
-  <nav class="navbar" id="navbar">
-    <div class="nav-container container">
-      <a href="#hero" class="nav-logo">SN</a>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#experience" class="nav-link">Experience</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-        <li><a href="/assets/Siddhu%20Nallasivam%20-%20Technical%20Engineering%20Manager.pdf" class="nav-link nav-cta" download>CV
-            <i data-lucide="download" class="nav-icon"></i></a></li>
-      </ul>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-  </nav>
+  <div class="progress-bar" id="progress-bar" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-noise" aria-hidden="true"></div>
 
-  <!-- ═══════════════════════════════════════════════ -->
-  <!-- HERO SECTION                                    -->
-  <!-- ═══════════════════════════════════════════════ -->
-  <section class="hero section" id="hero">
-    <canvas class="hero-canvas" id="hero-canvas"></canvas>
-    <div class="hero-content">
-      <p class="hero-greeting">Hello, I'm</p>
-      <h1 class="hero-name" id="hero-name">Siddhu Nallasivam</h1>
-      <p class="hero-title">Technical Engineering Manager</p>
-      <p class="hero-tagline">
-        I drive delivery excellence, AI-enabled engineering, and team performance —
-        turning complex business problems into scalable, well-architected solutions across regulated industries.
-      </p>
-      <div class="hero-cta">
-        <a href="#projects" class="btn btn-primary">
-          <i data-lucide="folder-open"></i>
-          View My Work
+  <!-- ═══════════════ NAV ═══════════════ -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#top" class="nav-logo" aria-label="Back to top">
+        <span class="nav-logo-mark">SN</span><span class="nav-logo-slash">/</span><span class="nav-logo-txt">2026</span>
+      </a>
+
+      <nav class="nav-links" id="nav-links" aria-label="Primary">
+        <a href="#about" class="nav-link" data-section="about">About</a>
+        <a href="#ai" class="nav-link" data-section="ai">AI</a>
+        <a href="#experience" class="nav-link" data-section="experience">Experience</a>
+        <a href="#work" class="nav-link" data-section="work">Work</a>
+        <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="kbd-chip" id="palette-open" aria-label="Open command palette">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="M18 3a3 3 0 0 0-3 3v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3V6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3"/></svg>
+          <span>K</span>
+        </button>
+        <a class="btn btn-ghost btn-sm nav-cv" href="assets/Siddhu-Nallasivam-Resume.pdf" download>
+          Resume
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
         </a>
-        <a href="#contact" class="btn btn-outline">
-          <i data-lucide="message-circle"></i>
-          Let's Talk
-        </a>
+        <button class="nav-burger" id="nav-burger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span>
+        </button>
       </div>
     </div>
-    <div class="scroll-indicator" id="scroll-indicator">
-      <span>Scroll to explore</span>
-      <i data-lucide="chevron-down"></i>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <nav class="mobile-menu-links" aria-label="Mobile">
+      <a href="#about" class="mobile-link" style="--i:0">About</a>
+      <a href="#ai" class="mobile-link" style="--i:1">AI</a>
+      <a href="#experience" class="mobile-link" style="--i:2">Experience</a>
+      <a href="#work" class="mobile-link" style="--i:3">Work</a>
+      <a href="#contact" class="mobile-link" style="--i:4">Contact</a>
+      <a href="assets/Siddhu-Nallasivam-Resume.pdf" class="mobile-link mobile-link--cv" style="--i:5" download>Download Resume ↓</a>
+    </nav>
+    <div class="mobile-menu-meta">
+      <span class="mono">kousiksiddhu@gmail.com</span>
+      <span class="mono" id="mobile-clock">--:-- IST</span>
     </div>
-  </section>
+  </div>
 
-  <!-- ═══════════════════════════════════════════════ -->
-  <!-- ABOUT SECTION                                   -->
-  <!-- ═══════════════════════════════════════════════ -->
-  <section class="section" id="about">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title reveal">About Me</h2>
-        <p class="section-subtitle reveal">The person behind the architecture</p>
+  <main id="top">
+
+    <!-- ═══════════════ HERO ═══════════════ -->
+    <section class="hero" id="hero">
+      <canvas class="hero-canvas" id="hero-canvas" aria-hidden="true"></canvas>
+      <div class="hero-glow" aria-hidden="true"></div>
+
+      <div class="hero-inner">
+        <div class="status-pill" data-reveal>
+          <span class="status-dot"></span>
+          Open to new opportunities
+          <span class="status-sep">·</span>
+          <span class="muted">Coimbatore, IN</span>
+        </div>
+
+        <h1 class="hero-name" data-reveal style="--i:1">
+          Siddhu<br />Nallasivam<span class="acc">.</span>
+        </h1>
+
+        <p class="hero-role" data-reveal style="--i:2">
+          Engineering leadership for the <em class="serif">AI&nbsp;era</em>
+        </p>
+
+        <p class="hero-line mono" data-reveal style="--i:3">
+          <span class="acc">&gt;</span> <span id="hero-typer">building teams that ship</span><span class="typer-caret" aria-hidden="true"></span>
+        </p>
+
+        <p class="hero-tagline" data-reveal style="--i:4">
+          Technical Engineering Manager with 11+ years turning complex problems into
+          shipped products — leading squads of 5–15, architecting cloud-native systems,
+          and operationalizing AI across the entire development lifecycle.
+        </p>
+
+        <div class="hero-cta" data-reveal style="--i:5">
+          <button class="btn btn-primary" id="hero-ask-ai">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="M12 3l1.9 5.7a2 2 0 0 0 1.3 1.3L21 12l-5.8 1.9a2 2 0 0 0-1.3 1.3L12 21l-1.9-5.8a2 2 0 0 0-1.3-1.3L3 12l5.8-2a2 2 0 0 0 1.3-1.2L12 3z"/></svg>
+            Ask my AI twin
+          </button>
+          <a href="#work" class="btn btn-ghost">
+            View work
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </a>
+        </div>
+
+        <dl class="hero-stats" data-reveal style="--i:6">
+          <div class="hero-stat">
+            <dt class="mono">Years shipping</dt>
+            <dd><span data-count="11">0</span>+</dd>
+          </div>
+          <div class="hero-stat">
+            <dt class="mono">Engineers mentored</dt>
+            <dd><span data-count="50">0</span>+</dd>
+          </div>
+          <div class="hero-stat">
+            <dt class="mono">Client CSAT</dt>
+            <dd><span data-count="90">0</span>%+</dd>
+          </div>
+          <div class="hero-stat">
+            <dt class="mono">Contract extensions</dt>
+            <dd><span data-count="60">0</span>%</dd>
+          </div>
+        </dl>
       </div>
 
-      <div class="about-grid">
-        <div class="about-avatar-wrapper reveal reveal-left">
-          <img src="/assets/avatar.jpg" alt="Siddhu Nallasivam — Illustrated portrait" class="about-avatar" />
-          <div class="about-avatar-ring"></div>
-          <div class="about-avatar-ring-inner"></div>
-          <div class="about-avatar-glow"></div>
-        </div>
+      <a href="#about" class="scroll-hint" aria-label="Scroll to about section">
+        <span class="mono">scroll</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon"><polyline points="6 9 12 15 18 9"/></svg>
+      </a>
+    </section>
 
-        <div class="about-text reveal reveal-right">
-          <p>
-            I'm a Technical Engineering Manager based in <strong>Coimbatore, India</strong>, with over
-            <strong>11 years</strong> of experience building products that people actually use.
-            I've shipped across iGaming, healthcare, financial services, and e-commerce —
-            owning delivery, architecture, AI enablement, and team performance end to end.
-          </p>
-          <p>
-            What drives me isn't just clean architecture (though I do love that). It's watching
-            an engineer I mentored go from struggling with client confidence to owning end-to-end
-            delivery independently. Or designing an AI Development SDLC that transforms how
-            teams build software. I sustain <strong>90%+ CSAT scores</strong> and
-            <strong>60% contract extensions</strong> by building trust through delivery credibility.
-          </p>
-          <p>
-            Outside of work, I'm a simple guy who enjoys good coffee, weekend road trips
-            around Tamil Nadu, and tinkering with side projects that may or may not see
-            the light of day.
-          </p>
-
-          <div class="about-stats">
-            <div class="about-stat">
-              <span class="about-stat-number" data-count="11" data-suffix="+">0</span>
-              <span class="about-stat-label">Years Experience</span>
-            </div>
-            <div class="about-stat">
-              <span class="about-stat-number" data-count="50" data-suffix="+">0</span>
-              <span class="about-stat-label">Engineers Mentored</span>
-            </div>
-            <div class="about-stat">
-              <span class="about-stat-number" data-count="6">0</span>
-              <span class="about-stat-label">Industry Domains</span>
-            </div>
-            <div class="about-stat">
-              <span class="about-stat-number" data-count="5" data-suffix="+">0</span>
-              <span class="about-stat-label">Countries Served</span>
-            </div>
-          </div>
-
-          <div class="about-highlights">
-            <div class="about-highlight">
-              <div class="about-highlight-icon"><i data-lucide="coffee"></i></div>
-              <div class="about-highlight-text">
-                <strong>Coffee-powered</strong>
-                Fueled by dark roast
-              </div>
-            </div>
-            <div class="about-highlight">
-              <div class="about-highlight-icon"><i data-lucide="blocks"></i></div>
-              <div class="about-highlight-text">
-                <strong>Systems thinker</strong>
-                Seeing the big picture
-              </div>
-            </div>
-            <div class="about-highlight">
-              <div class="about-highlight-icon"><i data-lucide="globe"></i></div>
-              <div class="about-highlight-text">
-                <strong>Global mindset</strong>
-                Cross-cultural delivery
-              </div>
-            </div>
-            <div class="about-highlight">
-              <div class="about-highlight-icon"><i data-lucide="target"></i></div>
-              <div class="about-highlight-text">
-                <strong>Outcome-driven</strong>
-                Focused on real impact
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════════ -->
-  <!-- SKILLS SECTION — BENTO GRID                     -->
-  <!-- ═══════════════════════════════════════════════ -->
-  <section class="section" id="skills">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title reveal">The Arsenal</h2>
-        <p class="section-subtitle reveal">Core competencies honed across 11+ years of building</p>
-      </div>
-
-      <div class="skills-grid">
-
-        <!-- Leadership — spans 2 cols -->
-        <div class="skill-card skill-card--leadership" data-accent="amber">
-          <div class="skill-card-header">
-            <div class="skill-icon"><i data-lucide="users"></i></div>
-            <h3 class="skill-title">Leadership</h3>
-          </div>
-          <p class="skill-description">Leading squads of 5–15 engineers with structured 1:1s, career plans, and performance coaching.</p>
-          <div class="skill-tags">
-            <span class="skill-tag">Team Management</span>
-            <span class="skill-tag">People Development</span>
-            <span class="skill-tag">Sprint Planning</span>
-            <span class="skill-tag">Performance Coaching</span>
-            <span class="skill-tag">Career Planning</span>
-            <span class="skill-tag">Utilization Mgmt</span>
-          </div>
-        </div>
-
-        <!-- Architecture -->
-        <div class="skill-card skill-card--architecture" data-accent="teal">
-          <div class="skill-card-header">
-            <div class="skill-icon"><i data-lucide="boxes"></i></div>
-            <h3 class="skill-title">Architecture</h3>
-          </div>
-          <p class="skill-description">Designing systems that scale — from microservices to event-driven pipelines.</p>
-          <div class="skill-tags">
-            <span class="skill-tag">Solution Design</span>
-            <span class="skill-tag">Microservices</span>
-            <span class="skill-tag">Serverless</span>
-            <span class="skill-tag">REST APIs</span>
-            <span class="skill-tag">Event-Driven</span>
-            <span class="skill-tag">Cloud-Native</span>
-            <span class="skill-tag">Compliance Architecture</span>
-          </div>
-        </div>
-
-        <!-- Frontend -->
-        <div class="skill-card skill-card--frontend" data-accent="violet">
-          <div class="skill-card-header">
-            <div class="skill-icon"><i data-lucide="monitor-smartphone"></i></div>
-            <h3 class="skill-title">Frontend & Mobile</h3>
-          </div>
-          <p class="skill-description">From React SPAs to native iOS — pixel-perfect, accessible, and performant.</p>
-          <div class="skill-tags">
-            <span class="skill-tag">React</span>
-            <span class="skill-tag">Vue.js</span>
-            <span class="skill-tag">Angular</span>
-            <span class="skill-tag">Swift / SwiftUI</span>
-            <span class="skill-tag">Flutter</span>
-            <span class="skill-tag">TypeScript</span>
-            <span class="skill-tag">HTML5 / CSS3</span>
-            <span class="skill-tag">ADA Compliance</span>
-          </div>
-        </div>
-
-        <!-- Backend & Cloud -->
-        <div class="skill-card skill-card--backend" data-accent="emerald">
-          <div class="skill-card-header">
-            <div class="skill-icon"><i data-lucide="cloud"></i></div>
-            <h3 class="skill-title">Backend & Cloud</h3>
-          </div>
-          <p class="skill-description">Building robust APIs and cloud infrastructure that keeps the business running.
-          </p>
-          <div class="skill-tags">
-            <span class="skill-tag">Node.js</span>
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">AWS Lambda</span>
-            <span class="skill-tag">AppSync</span>
-            <span class="skill-tag">Cognito</span>
-            <span class="skill-tag">EKS</span>
-            <span class="skill-tag">CloudFormation</span>
-            <span class="skill-tag">Docker</span>
-            <span class="skill-tag">SageMaker</span>
-          </div>
-        </div>
-
-        <!-- AI & Automation -->
-        <div class="skill-card skill-card--devops" data-accent="rose">
-          <div class="skill-card-header">
-            <div class="skill-icon"><i data-lucide="sparkles"></i></div>
-            <h3 class="skill-title">AI & Automation</h3>
-          </div>
-          <p class="skill-description">Driving AI-enabled engineering — from agent design to SDLC transformation.</p>
-          <div class="skill-tags">
-            <span class="skill-tag">AI Adoption Strategy</span>
-            <span class="skill-tag">AI Agent Design</span>
-            <span class="skill-tag">AI Dev SDLC</span>
-            <span class="skill-tag">Prompt Engineering</span>
-            <span class="skill-tag">Token Optimization</span>
-            <span class="skill-tag">Responsible AI</span>
-          </div>
-        </div>
-
-        <!-- DevOps -->
-        <div class="skill-card skill-card--devops" data-accent="rose">
-          <div class="skill-card-header">
-            <div class="skill-icon"><i data-lucide="git-branch"></i></div>
-            <h3 class="skill-title">DevOps & Quality</h3>
-          </div>
-          <p class="skill-description">Automation is religion. From CI/CD to GitOps — shipping with confidence.</p>
-          <div class="skill-tags">
-            <span class="skill-tag">CI/CD Pipelines</span>
-            <span class="skill-tag">Jenkins</span>
-            <span class="skill-tag">GitOps</span>
-            <span class="skill-tag">Terraform</span>
-            <span class="skill-tag">Argo CD</span>
-            <span class="skill-tag">Helm</span>
-            <span class="skill-tag">SonarQube</span>
-            <span class="skill-tag">DORA Metrics</span>
-          </div>
-        </div>
-
-        <!-- Domains -->
-        <div class="skill-card skill-card--domains" data-accent="sky">
-          <div class="skill-card-header">
-            <div class="skill-icon"><i data-lucide="globe"></i></div>
-            <h3 class="skill-card-title">Industry Domains</h3>
-          </div>
-          <p class="skill-card-desc">Deep experience across heavily regulated and high-growth verticals.</p>
-          <div class="skill-tags">
-            <span class="badge">iGaming & Sports Betting</span>
-            <span class="badge">Healthcare</span>
-            <span class="badge">Financial Services</span>
-            <span class="badge">E-commerce</span>
-            <span class="badge">Media</span>
-            <span class="badge">Transportation</span>
-          </div>
-        </div>
-
+    <!-- ═══════════════ MARQUEE ═══════════════ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>AWS</span><i>✦</i><span>AI Agents</span><i>✦</i><span>Swift / SwiftUI</span><i>✦</i><span>React</span><i>✦</i><span>GitOps</span><i>✦</i><span>Node.js</span><i>✦</i><span>AI Dev SDLC</span><i>✦</i><span>Kubernetes</span><i>✦</i><span>iGaming</span><i>✦</i><span>Healthcare</span><i>✦</i><span>FinServ</span><i>✦</i><span>Terraform</span><i>✦</i><span>Prompt Engineering</span><i>✦</i><span>DORA Metrics</span><i>✦</i>
+        <span>AWS</span><i>✦</i><span>AI Agents</span><i>✦</i><span>Swift / SwiftUI</span><i>✦</i><span>React</span><i>✦</i><span>GitOps</span><i>✦</i><span>Node.js</span><i>✦</i><span>AI Dev SDLC</span><i>✦</i><span>Kubernetes</span><i>✦</i><span>iGaming</span><i>✦</i><span>Healthcare</span><i>✦</i><span>FinServ</span><i>✦</i><span>Terraform</span><i>✦</i><span>Prompt Engineering</span><i>✦</i><span>DORA Metrics</span><i>✦</i>
       </div>
     </div>
-  </section>
 
-  <!-- ═══════════════════════════════════════════════ -->
-  <!-- EXPERIENCE SECTION — TIMELINE                   -->
-  <!-- ═══════════════════════════════════════════════ -->
-  <section class="section experience" id="experience">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title reveal">The Journey</h2>
-        <p class="section-subtitle reveal">From senior developer to owning delivery, people, AI enablement, and client growth</p>
+    <!-- ═══════════════ ABOUT — BENTO ═══════════════ -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="kicker mono"><span class="acc">01</span> / about</span>
+          <h2 class="section-title">The person behind<br />the <em class="serif">systems</em></h2>
+        </div>
+
+        <div class="bento">
+          <article class="card bento-bio" data-reveal>
+            <p>
+              I'm a Technical Engineering Manager at <strong>Presidio</strong>, based in Coimbatore, India.
+              Over 11 years I've shipped across iGaming, healthcare, financial services, and e-commerce —
+              owning delivery, architecture, AI enablement, and team performance end to end.
+            </p>
+            <p>
+              What drives me isn't just clean architecture (though I love that). It's watching an engineer
+              I mentored go from struggling with client confidence to owning delivery independently.
+              Or designing an <strong>AI Development SDLC</strong> that changes how whole teams build software.
+            </p>
+            <p class="muted">
+              Off the clock: dark-roast coffee, weekend road trips around Tamil Nadu, and side
+              projects that may or may not see the light of day.
+            </p>
+          </article>
+
+          <article class="card bento-avatar" data-reveal style="--i:1">
+            <img src="/assets/avatar.jpg" alt="Illustrated portrait of Siddhu Nallasivam" loading="lazy" />
+            <div class="bento-avatar-scan" aria-hidden="true"></div>
+            <span class="bento-avatar-tag mono">siddhu.jpg — human, verified</span>
+          </article>
+
+          <article class="card bento-now" data-reveal style="--i:2">
+            <span class="card-label mono">now</span>
+            <h3>Associate Delivery Manager <span class="muted">/</span> Associate Architect</h3>
+            <p class="muted">Presidio — leading GLI-compliant iGaming platforms into Brazil, Peru &amp; Spain, and rolling out an AI-first engineering culture.</p>
+            <span class="mono dim">Nov 2023 → present</span>
+          </article>
+
+          <article class="card bento-clock" data-reveal style="--i:3">
+            <span class="card-label mono">local time</span>
+            <div class="bento-clock-time mono" id="ist-clock">--:--:--</div>
+            <span class="mono dim">IST · UTC+5:30 · Coimbatore</span>
+          </article>
+
+          <article class="card bento-principle" data-reveal style="--i:4">
+            <span class="card-label mono">operating principle</span>
+            <blockquote>“Humans in the loop.<br />AI in the flow.<br /><em class="serif acc">Trust in the delivery.</em>”</blockquote>
+          </article>
+
+          <article class="card bento-domains" data-reveal style="--i:5">
+            <span class="card-label mono">domains</span>
+            <ul class="chip-list">
+              <li class="chip">iGaming &amp; Sports Betting</li>
+              <li class="chip">Healthcare</li>
+              <li class="chip">Financial Services</li>
+              <li class="chip">E-commerce</li>
+              <li class="chip">Media</li>
+              <li class="chip">Transportation</li>
+            </ul>
+          </article>
+        </div>
       </div>
+    </section>
 
-      <div class="timeline">
-        <div class="timeline-line"></div>
-
-        <!-- Role 1: Associate Delivery Manager / Associate Architect -->
-        <div class="timeline-item">
-          <div class="timeline-node"></div>
-          <div class="timeline-card glass-card">
-            <div class="timeline-header">
-              <div>
-                <h3 class="timeline-role">Associate Delivery Manager / Associate Architect</h3>
-                <p class="timeline-company">Presidio · Coimbatore, India (Hybrid)</p>
-              </div>
-              <span class="timeline-date">Nov 2023 – Present</span>
-            </div>
-            <div class="timeline-domain">
-              <span class="domain-tag domain-tag--igaming">
-                <i data-lucide="trophy" class="domain-icon"></i>
-                iGaming & Sports Betting
-              </span>
-            </div>
-            <div class="timeline-description">
-              <ul>
-                <li>Spearheaded <strong>GLI-19 and GLI-33</strong> compliance certification, building USA-integrated
-                  AWS-based regulatory systems for expansion into Brazil, Peru, and Spain</li>
-                <li>Designed internal <strong>GitOps tooling (ArgoCD)</strong> for Helm release management and
-                  compliance dashboards for ECR image approvals</li>
-                <li>Defined and operationalized an <strong>AI Development SDLC</strong> — conducted AI adoption strategy
-                  sessions covering agent design, skill creation, token optimization, and responsible usage</li>
-                <li>Managed teams of 5–15 with <strong>structured 1:1s, quarterly skill-will matrices, and career
-                  plans</strong> — mentoring engineers from early-career uncertainty to full domain ownership</li>
-                <li>Sustained <strong>90%+ CSAT</strong> and <strong>60% contract extensions</strong> through trusted
-                  advisor relationships and delivery-led growth</li>
-                <li>Developed <strong>iOS native sports betting app</strong> (Swift, SwiftUI, TCA pattern), migrating
-                  from Xamarin with reusable component libraries</li>
-              </ul>
-            </div>
-            <div class="timeline-tags">
-              <span class="timeline-tag">AWS</span>
-              <span class="timeline-tag">Swift / SwiftUI</span>
-              <span class="timeline-tag">ArgoCD</span>
-              <span class="timeline-tag">AI SDLC</span>
-              <span class="timeline-tag">People Management</span>
-              <span class="timeline-tag">GLI Compliance</span>
-            </div>
-          </div>
+    <!-- ═══════════════ AI SECTION ═══════════════ -->
+    <section class="section section-ai" id="ai">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="kicker mono"><span class="acc">02</span> / ai-enabled engineering</span>
+          <h2 class="section-title">I don't just use AI.<br />I <em class="serif">operationalize</em> it.</h2>
+          <p class="section-sub">From adoption strategy to agent design — building the systems that let teams ship faster without losing the human judgment that matters.</p>
         </div>
 
-        <!-- Role 2: Lead Engineer -->
-        <div class="timeline-item">
-          <div class="timeline-node"></div>
-          <div class="timeline-card glass-card">
-            <div class="timeline-header">
-              <div>
-                <h3 class="timeline-role">Lead Engineer</h3>
-                <p class="timeline-company">Presidio · Chennai, India (On-site)</p>
-              </div>
-              <span class="timeline-date">Feb 2022 – Oct 2023</span>
-            </div>
-            <div class="timeline-domain">
-              <span class="domain-tag domain-tag--healthcare">
-                <i data-lucide="heart-pulse" class="domain-icon"></i>
-                Healthcare & Life Sciences
-              </span>
-            </div>
-            <div class="timeline-description">
-              <ul>
-                <li>Architected HIPAA-compliant cloud solutions for major USA healthcare data pipelines</li>
-                <li>Built real-time patient monitoring dashboards with React and WebSocket integrations for US clinics
-                </li>
-                <li>Implemented serverless microservices for medical device data processing</li>
-                <li>Mentored junior engineers and established architectural best practices</li>
-              </ul>
-            </div>
-            <div class="timeline-tags">
-              <span class="timeline-tag">React</span>
-              <span class="timeline-tag">Node.js</span>
-              <span class="timeline-tag">AWS Lambda</span>
-              <span class="timeline-tag">WebSockets</span>
-              <span class="timeline-tag">HIPAA</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Role 3: Senior Software Engineer -->
-        <div class="timeline-item">
-          <div class="timeline-node"></div>
-          <div class="timeline-card glass-card">
-            <div class="timeline-header">
-              <div>
-                <h3 class="timeline-role">Senior Software Engineer</h3>
-                <p class="timeline-company">Presidio · Coimbatore, India (Hybrid)</p>
-              </div>
-              <span class="timeline-date">Feb 2021 – Jan 2022</span>
-            </div>
-            <div class="timeline-domain">
-              <span class="domain-tag domain-tag--finserv">
-                <i data-lucide="landmark" class="domain-icon"></i>
-                Financial Services & E-commerce
-              </span>
-            </div>
-            <div class="timeline-description">
-              <ul>
-                <li>Built scalable USA e-commerce platforms handling high-traffic seasonal shopping events</li>
-                <li>Developed real-time financial dashboards with complex data visualization for US brokerages</li>
-                <li>Implemented secure payment processing integrations with PCI-DSS compliance</li>
-              </ul>
-            </div>
-            <div class="timeline-tags">
-              <span class="timeline-tag">Vue.js</span>
-              <span class="timeline-tag">Python</span>
-              <span class="timeline-tag">Docker</span>
-              <span class="timeline-tag">PCI-DSS</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Role 4: Consultant -->
-        <div class="timeline-item">
-          <div class="timeline-node"></div>
-          <div class="timeline-card glass-card">
-            <div class="timeline-header">
-              <div>
-                <h3 class="timeline-role">Consultant</h3>
-                <p class="timeline-company">Sirius Computer Solutions · Chennai, India</p>
-              </div>
-              <span class="timeline-date">Apr 2019 – Jan 2021</span>
-            </div>
-            <div class="timeline-domain">
-              <span class="domain-tag domain-tag--consulting">
-                <i data-lucide="briefcase" class="domain-icon"></i>
-                Enterprise Consulting
-              </span>
-            </div>
-            <div class="timeline-description">
-              <ul>
-                <li>Provided technical consulting for major USA enterprise cloud migrations and architecture design</li>
-                <li>Engineered scalable Java/Spring Boot microservices and RESTful API backends for US clients</li>
-                <li>Improved delivery efficiency by establishing CI/CD automation pipelines</li>
-              </ul>
-            </div>
-            <div class="timeline-tags">
-              <span class="timeline-tag">Java</span>
-              <span class="timeline-tag">Spring Boot</span>
-              <span class="timeline-tag">REST APIs</span>
-              <span class="timeline-tag">Cloud Migration</span>
-              <span class="timeline-tag">CI/CD</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Role 5: Associate Consultant -->
-        <div class="timeline-item">
-          <div class="timeline-node"></div>
-          <div class="timeline-card glass-card">
-            <div class="timeline-header">
-              <div>
-                <h3 class="timeline-role">Associate Consultant</h3>
-                <p class="timeline-company">Sirius Computer Solutions · Chennai, India</p>
-              </div>
-              <span class="timeline-date">May 2017 – Mar 2019</span>
-            </div>
-            <div class="timeline-domain">
-              <span class="domain-tag domain-tag--consulting">
-                <i data-lucide="terminal" class="domain-icon"></i>
-                Enterprise Solutions
-              </span>
-            </div>
-            <div class="timeline-description">
-              <ul>
-                <li>Implemented full-stack features for USA client web applications and enterprise portals</li>
-                <li>Refactored legacy databases, optimizing query plans and schema patterns for US platforms</li>
-                <li>Developed comprehensive automated test coverage with JUnit and integrations</li>
-              </ul>
-            </div>
-            <div class="timeline-tags">
-              <span class="timeline-tag">JavaScript</span>
-              <span class="timeline-tag">SQL Server</span>
-              <span class="timeline-tag">Spring</span>
-              <span class="timeline-tag">JUnit</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Role 6: Software Engineer -->
-        <div class="timeline-item">
-          <div class="timeline-node"></div>
-          <div class="timeline-card glass-card">
-            <div class="timeline-header">
-              <div>
-                <h3 class="timeline-role">Software Engineer</h3>
-                <p class="timeline-company">Changepond Technologies · Chennai, India</p>
-              </div>
-              <span class="timeline-date">Oct 2016 – Apr 2017</span>
-            </div>
-            <div class="timeline-domain">
-              <span class="domain-tag domain-tag--webdev">
-                <i data-lucide="code" class="domain-icon"></i>
-                Software Development
-              </span>
-            </div>
-            <div class="timeline-description">
-              <ul>
-                <li>Developed interactive UI components and client-side modules</li>
-                <li>Fixed critical application issues, enhancing security and performance</li>
-              </ul>
-            </div>
-            <div class="timeline-tags">
-              <span class="timeline-tag">HTML5 / CSS3</span>
-              <span class="timeline-tag">jQuery</span>
-              <span class="timeline-tag">Bootstrap</span>
-              <span class="timeline-tag">SQL</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Role 7: Programmer Analyst Trainee -->
-        <div class="timeline-item">
-          <div class="timeline-node"></div>
-          <div class="timeline-card glass-card">
-            <div class="timeline-header">
-              <div>
-                <h3 class="timeline-role">Programmer Analyst Trainee</h3>
-                <p class="timeline-company">Changepond Technologies · Chennai, India</p>
-              </div>
-              <span class="timeline-date">Jun 2015 – Sep 2016</span>
-            </div>
-            <div class="timeline-domain">
-              <span class="domain-tag domain-tag--webdev">
-                <i data-lucide="book-open" class="domain-icon"></i>
-                Technical Training
-              </span>
-            </div>
-            <div class="timeline-description">
-              <ul>
-                <li>Completed rigorous training program in enterprise software and databases</li>
-                <li>Assisted senior developers in building internal prototypes and documenting specs</li>
-              </ul>
-            </div>
-            <div class="timeline-tags">
-              <span class="timeline-tag">Core Java</span>
-              <span class="timeline-tag">JavaScript</span>
-              <span class="timeline-tag">Technical Specs</span>
-              <span class="timeline-tag">RDBMS</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════════ -->
-  <!-- PROJECTS SECTION — CASE STUDIES                 -->
-  <!-- ═══════════════════════════════════════════════ -->
-  <section class="section" id="projects">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title reveal">The Showcase</h2>
-        <p class="section-subtitle reveal">Real impact. Real numbers. Real stories.</p>
-      </div>
-
-      <div class="projects-grid">
-
-        <!-- FEATURED: DraftKings Case Study -->
-        <div class="project-card project-card--featured glass-card">
-          <div class="project-card-badge">Featured Case Study</div>
-          <div class="project-header">
-            <div>
-              <span class="project-card-domain">iGaming & Sports Betting</span>
-              <h3 class="project-title">Presidio × DraftKings</h3>
-              <p class="project-subtitle">A Strategic Partnership Transforming Mobile Innovation</p>
-            </div>
-            <div class="project-card-logo">
-              <i data-lucide="trophy"></i>
-            </div>
+        <div class="ai-grid">
+          <div class="ai-cards">
+            <article class="card ai-card" data-reveal>
+              <span class="ai-card-num mono">a1</span>
+              <h3>AI Development SDLC</h3>
+              <p>Defined and operationalized a structured lifecycle for planning, building, reviewing, and shipping with AI — adopted across live client engagements.</p>
+            </article>
+            <article class="card ai-card" data-reveal style="--i:1">
+              <span class="ai-card-num mono">a2</span>
+              <h3>Agents &amp; Skills</h3>
+              <p>Designed AI agents and reusable skills for engineering workflows — code review, compliance documentation, regulatory mapping, release notes.</p>
+            </article>
+            <article class="card ai-card" data-reveal style="--i:2">
+              <span class="ai-card-num mono">a3</span>
+              <h3>Prompt Libraries</h3>
+              <p>Created reusable AI workflow patterns and prompt libraries for repetitive project activities — turning one-off wins into team-wide leverage.</p>
+            </article>
+            <article class="card ai-card" data-reveal style="--i:3">
+              <span class="ai-card-num mono">a4</span>
+              <h3>Responsible Adoption</h3>
+              <p>Human-in-the-loop validation, token/cost strategy, and safe-usage mentoring — AI that survives audits in regulated industries.</p>
+            </article>
           </div>
 
-          <p class="project-description">
-            Started with high stakes, unexplored native development territory, and critical timelines.
-            Excellence was the only path to scale. Through consistent delivery, Presidio became integral
-            to every major DraftKings release, delivering transformational impact across the entire platform.
-          </p>
-
-          <div class="project-metrics">
-            <div class="project-metric">
-              <span class="project-metric-value" data-count="2" data-suffix=".5">0</span>
-              <span class="project-metric-label">Years of Partnership</span>
-              <span class="metric-context">Building trust through excellence</span>
+          <!-- AI TWIN CHAT -->
+          <div class="chat" id="chat" data-reveal>
+            <div class="chat-titlebar">
+              <div class="chat-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+              <span class="mono chat-title">siddhu-gpt<span class="dim"> · context window: 11 years</span></span>
+              <span class="chat-live mono"><span class="status-dot"></span>online</span>
             </div>
-            <div class="project-metric">
-              <span class="project-metric-value" data-count="50" data-suffix="+">0</span>
-              <span class="project-metric-label">Team Members</span>
-              <span class="metric-context">Scaled from initial team of 4</span>
+            <div class="chat-log" id="chat-log" aria-live="polite"></div>
+            <div class="chat-chips" id="chat-chips">
+              <button class="chat-chip" data-q="What's his experience with AI?">AI experience?</button>
+              <button class="chat-chip" data-q="How does he lead teams?">Leadership style?</button>
+              <button class="chat-chip" data-q="What's his biggest project?">Biggest project?</button>
+              <button class="chat-chip" data-q="Is he open to new opportunities?">Open to work?</button>
             </div>
-            <div class="project-metric">
-              <span class="project-metric-value" data-count="5">0</span>
-              <span class="project-metric-label">Major Releases</span>
-              <span class="metric-context">Critical product launches</span>
-            </div>
-            <div class="project-metric">
-              <span class="project-metric-value" data-count="100" data-suffix="%">0</span>
-              <span class="project-metric-label">Release Involvement</span>
-              <span class="metric-context">Integral to every DK launch</span>
-            </div>
-          </div>
-
-          <div class="project-card-section">
-            <h4 class="project-card-section-title">
-              <i data-lucide="milestone"></i>
-              Key Milestones That Built Trust
-            </h4>
-            <div class="project-milestones">
-              <div class="milestone">
-                <div class="milestone-dot"></div>
-                <div class="milestone-label">
-                  <strong>Pick6 Launch</strong>
-                  <p>Gateway into DraftKings ecosystem — established credibility and opened doors for expansion</p>
-                </div>
-              </div>
-              <div class="milestone">
-                <div class="milestone-dot"></div>
-                <div class="milestone-label">
-                  <strong>Project Flutie</strong>
-                  <p>Massive Xamarin-to-Native migration demonstrating complex technical expertise under pressure</p>
-                </div>
-              </div>
-              <div class="milestone">
-                <div class="milestone-dot"></div>
-                <div class="milestone-label">
-                  <strong>Platform Expansion</strong>
-                  <p>Scaled across Sportsbook, Casino, GNOG, Lottery, Predict, and Horse — proving versatility</p>
-                </div>
-              </div>
-              <div class="milestone">
-                <div class="milestone-dot"></div>
-                <div class="milestone-label">
-                  <strong>Product Portfolio</strong>
-                  <p>Migrated 3 native apps, delivered 2 new products — sustained excellence across all initiatives</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card-section">
-            <h4 class="project-card-section-title">
-              <i data-lucide="cpu"></i>
-              Technical Innovation
-            </h4>
-            <div class="innovation-grid">
-              <div class="innovation-card">
-                <div class="innovation-icon"><i data-lucide="smartphone"></i></div>
-                <h5>Mobile Platform Foundation</h5>
-                <p>Built the Shell App serving all products — PAM, navigation, universal linking, geolocation, and
-                  observability</p>
-              </div>
-              <div class="innovation-card">
-                <div class="innovation-icon"><i data-lucide="test-tubes"></i></div>
-                <h5>Automation Framework</h5>
-                <p>Evolved from POC to comprehensive testing framework — UI, Regression, Smoke, and E2E testing</p>
-              </div>
-              <div class="innovation-card">
-                <div class="innovation-icon"><i data-lucide="activity"></i></div>
-                <h5>Observability Revolution</h5>
-                <p>Built adaptive analytics with OpenTelemetry — eliminating vendor lock-in with unified logging</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-tags">
-            <span class="badge">Swift</span>
-            <span class="badge">SwiftUI</span>
-            <span class="badge">TCA Pattern</span>
-            <span class="badge">OpenTelemetry</span>
-            <span class="badge">AWS</span>
-            <span class="badge">Native iOS</span>
-            <span class="badge">GeoFencing</span>
-            <span class="badge">CI/CD</span>
-          </div>
-        </div>
-
-        <!-- Project 2: Global Compliance Platform (Trivelta AWS Proserve Case Study) -->
-        <div class="project-card project-card--featured glass-card">
-          <div class="project-card-badge">Featured Case Study</div>
-          <div class="project-header">
-            <div>
-              <span class="project-card-domain">Regulatory & Compliance</span>
-              <h3 class="project-title">Presidio × AWS Proserve × Trivelta</h3>
-              <p class="project-subtitle">Global Compliance Engine</p>
-            </div>
-            <div class="project-card-logo">
-              <i data-lucide="shield-check"></i>
-            </div>
-          </div>
-
-          <p class="project-description">
-            The objective of the <strong>Multi-Workstream Initiative</strong> is to support Trivelta, LLC in modernizing
-            its B2B iGaming platform through coordinated efforts across GLI compliance, architecture transformation, and
-            performance optimization. This initiative focuses on enabling regulatory readiness for new Brazil, Spain,
-            Peru markets while re-engineering core platform components (Mobile, Web, Backend) into scalable, modular,
-            and cloud-native architectures.
-          </p>
-
-          <div class="project-metrics">
-            <div class="project-metric">
-              <span class="project-metric-value" data-count="3">0</span>
-              <span class="project-metric-label">Markets Enabled</span>
-              <span class="metric-context">Brazil, Spain, & Peru</span>
-            </div>
-            <div class="project-metric">
-              <span class="project-metric-value" data-count="2">0</span>
-              <span class="project-metric-label">Compliance Certs</span>
-              <span class="metric-context">GLI-19 & GLI-33 ready</span>
-            </div>
-            <div class="project-metric">
-              <span class="project-metric-value" data-count="3">0</span>
-              <span class="project-metric-label">Platforms Modernized</span>
-              <span class="metric-context">Mobile, Web, & Backend</span>
-            </div>
-            <div class="project-metric">
-              <span class="project-metric-value" data-count="100" data-suffix="%">0</span>
-              <span class="project-metric-label">AWS Architecture</span>
-              <span class="metric-context">Modular cloud-native setup</span>
-            </div>
-          </div>
-
-          <div class="project-card-section">
-            <h4 class="project-card-section-title">
-              <i data-lucide="milestone"></i>
-              Key Milestones That Built Trust
-            </h4>
-            <div class="project-milestones">
-              <div class="milestone">
-                <div class="milestone-dot"></div>
-                <div class="milestone-label">
-                  <strong>Brazil Market Launch</strong>
-                  <p>Achieved regulatory preparedness for B2B gaming launch in Brazil</p>
-                </div>
-              </div>
-              <div class="milestone">
-                <div class="milestone-dot"></div>
-                <div class="milestone-label">
-                  <strong>Spain & Peru Compliance</strong>
-                  <p>Passed gaming authority standard validations for Spain and Peru gaming regulators</p>
-                </div>
-              </div>
-              <div class="milestone">
-                <div class="milestone-dot"></div>
-                <div class="milestone-label">
-                  <strong>Architecture Transformation</strong>
-                  <p>Migrated legacy platform components into scalable, modular, event-driven service layers</p>
-                </div>
-              </div>
-              <div class="milestone">
-                <div class="milestone-dot"></div>
-                <div class="milestone-label">
-                  <strong>Modular Client Launch</strong>
-                  <p>Successfully shipped new unified client codebases across Mobile and Web applications</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card-section">
-            <h4 class="project-card-section-title">
-              <i data-lucide="cpu"></i>
-              Technical Innovation
-            </h4>
-            <div class="innovation-grid">
-              <div class="innovation-card">
-                <div class="innovation-icon"><i data-lucide="smartphone"></i></div>
-                <h5>Mobile & Web Foundations</h5>
-                <p>Re-engineered B2B client applications to run on modern modular UI components</p>
-              </div>
-              <div class="innovation-card">
-                <div class="innovation-icon"><i data-lucide="shield"></i></div>
-                <h5>GLI Compliance Automation</h5>
-                <p>Automated code signatures, image hashing, and audit trails to guarantee frictionless audits</p>
-              </div>
-              <div class="innovation-card">
-                <div class="innovation-icon"><i data-lucide="cloud"></i></div>
-                <h5>AWS Cloud Re-engineering</h5>
-                <p>Designed containerized EKS environments, serverless endpoints, and high-availability pipelines</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-tags">
-            <span class="badge">AWS EKS</span>
-            <span class="badge">GLI-19 & 33</span>
-            <span class="badge">React & Swift</span>
-            <span class="badge">Serverless</span>
-            <span class="badge">Microservices</span>
-            <span class="badge">B2B iGaming</span>
-            <span class="badge">CI/CD</span>
-            <span class="badge">GitOps (ArgoCD)</span>
-          </div>
-        </div>
-
-        <!-- Project 3: iOS Native Migration -->
-        <div class="project-card glass-card">
-          <div class="project-header">
-            <div>
-              <span class="project-card-domain">Mobile Engineering</span>
-              <h3 class="project-title">Xamarin → Native iOS Migration</h3>
-            </div>
-            <div class="project-card-logo">
-              <i data-lucide="smartphone"></i>
-            </div>
-          </div>
-          <p class="project-description">
-            Led the complete migration from Xamarin to native Swift/SwiftUI for a major USA iGaming platform using TCA
-            pattern.
-            Engineered reusable component libraries shared across multiple product lines, dramatically
-            improving developer experience and app performance.
-          </p>
-          <div class="project-metrics project-metrics--small">
-            <div class="project-metric">
-              <span class="project-metric-value" data-count="3">0</span>
-              <span class="project-metric-label">Apps Migrated</span>
-            </div>
-            <div class="project-metric">
-              <span class="project-metric-value" data-count="2">0</span>
-              <span class="project-metric-label">New Products</span>
-            </div>
-          </div>
-          <div class="project-tags">
-            <span class="badge">Swift</span>
-            <span class="badge">SwiftUI</span>
-            <span class="badge">TCA</span>
-            <span class="badge">Xamarin</span>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Resume Download -->
-      <div class="resume-download reveal">
-        <div class="glass-card resume-card">
-          <div class="resume-card-content">
-            <div>
-              <h3 class="resume-card-title">Need a shareable CV?</h3>
-              <p class="resume-card-text">Download my short, ATS-friendly CV formatted as a PDF to print or upload
-                directly to applicant tracking systems.</p>
-            </div>
-            <a href="/assets/Siddhu%20Nallasivam%20-%20Technical%20Engineering%20Manager.pdf" class="btn btn-primary" download>
-              <i data-lucide="download"></i>
-              Download CV
-            </a>
+            <form class="chat-input-row" id="chat-form">
+              <input type="text" id="chat-input" class="chat-input" placeholder="Ask anything about Siddhu…" autocomplete="off" maxlength="200" aria-label="Ask the AI twin a question" />
+              <button type="submit" class="chat-send" aria-label="Send message">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              </button>
+            </form>
+            <p class="chat-footnote mono">runs 100% in your browser · zero tokens harmed · the real Siddhu is smarter</p>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ═══════════════════════════════════════════════ -->
-  <!-- CONTACT SECTION                                 -->
-  <!-- ═══════════════════════════════════════════════ -->
-  <section class="section" id="contact">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title reveal">Let's Connect</h2>
-        <p class="section-subtitle reveal">Got a project in mind? Let's build something extraordinary together.</p>
-      </div>
-
-      <div class="contact-grid">
-        <div class="contact-info">
-          <h3 class="contact-heading">Let's Build<br />Something<br /><span class="gradient-text">Together.</span></h3>
-
-          <div class="contact-links">
-            <div class="contact-link glass-card copy-email-btn" style="cursor: pointer;"
-              data-email="kousiksiddhu@gmail.com">
-              <i data-lucide="mail"></i>
-              <div>
-                <span class="contact-link-label">Email</span>
-                <span class="contact-link-value">kousiksiddhu@gmail.com</span>
-              </div>
-              <i data-lucide="copy" class="copy-action-icon" title="Copy Email"></i>
-            </div>
-            <a href="https://linkedin.com/in/siddhu-nallasivam" target="_blank" rel="noopener"
-              class="contact-link glass-card">
-              <i data-lucide="external-link"></i>
-              <div>
-                <span class="contact-link-label">LinkedIn</span>
-                <span class="contact-link-value">siddhu-nallasivam</span>
-              </div>
-            </a>
-            <a href="tel:+919384884604" class="contact-link glass-card">
-              <i data-lucide="phone"></i>
-              <div>
-                <span class="contact-link-label">Phone</span>
-                <span class="contact-link-value">+91 93848 84604</span>
-              </div>
-            </a>
-            <div class="contact-link glass-card">
-              <i data-lucide="map-pin"></i>
-              <div>
-                <span class="contact-link-label">Location</span>
-                <span class="contact-link-value">Coimbatore, India</span>
-              </div>
-            </div>
-          </div>
+    <!-- ═══════════════ EXPERIENCE ═══════════════ -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="kicker mono"><span class="acc">03</span> / trajectory</span>
+          <h2 class="section-title">Ten years, six domains,<br />one <em class="serif">throughline</em>: delivery</h2>
         </div>
 
-        <div class="contact-form-wrapper">
-          <form class="contact-form glass-card" id="contact-form">
-            <!-- Web3Forms Access Key: Get one for free at https://web3forms.com -->
-            <input type="hidden" name="access_key" value="eaff1939-d194-434a-9f6b-fa27fab0bf90" />
-            <div class="form-group">
-              <input type="text" id="form-name" name="name" class="form-input" required autocomplete="name" />
-              <label for="form-name" class="form-label">Your Name</label>
+        <div class="timeline">
+
+          <article class="tl-item" data-reveal>
+            <div class="tl-rail"><span class="tl-node tl-node--live"></span></div>
+            <div class="tl-body card">
+              <div class="tl-top">
+                <span class="tl-date mono acc">Nov 2023 — present</span>
+                <span class="chip chip--domain">iGaming &amp; Sports Betting</span>
+              </div>
+              <h3 class="tl-role">Associate Delivery Manager / Associate Architect</h3>
+              <p class="tl-company muted">Presidio · Coimbatore</p>
+              <ul class="tl-points">
+                <li>Spearheaded <strong>GLI-19 / GLI-33 compliance certification</strong>, building AWS-based regulatory systems for expansion into Brazil, Peru, and Spain</li>
+                <li>Defined and operationalized an <strong>AI Development SDLC</strong> — agent design, skill creation, token optimization, responsible usage</li>
+                <li>Managed teams of 5–15 with structured 1:1s, skill-will matrices, and career plans — sustaining <strong>90%+ CSAT</strong> and <strong>60% contract extensions</strong></li>
+                <li>Built internal <strong>GitOps tooling (ArgoCD)</strong> for Helm release management and compliance dashboards</li>
+                <li>Shipped a native iOS sports betting app (Swift, SwiftUI, TCA), migrating from Xamarin</li>
+              </ul>
+              <div class="tag-row">
+                <span class="tag">AWS</span><span class="tag">Swift</span><span class="tag">ArgoCD</span><span class="tag">AI SDLC</span><span class="tag">GLI Compliance</span><span class="tag">People Mgmt</span>
+              </div>
             </div>
-            <div class="form-group">
-              <input type="email" id="form-email" name="email" class="form-input" required autocomplete="email" />
-              <label for="form-email" class="form-label">Your Email</label>
+          </article>
+
+          <article class="tl-item" data-reveal>
+            <div class="tl-rail"><span class="tl-node"></span></div>
+            <div class="tl-body card">
+              <div class="tl-top">
+                <span class="tl-date mono">Feb 2022 — Oct 2023</span>
+                <span class="chip chip--domain">Healthcare &amp; Life Sciences</span>
+              </div>
+              <h3 class="tl-role">Lead Engineer</h3>
+              <p class="tl-company muted">Presidio · Chennai</p>
+              <ul class="tl-points">
+                <li>Architected a modular <strong>Flutter framework</strong> for a medical instruments company</li>
+                <li>Built a <strong>conversational AI interface</strong> for a major pharma company's medical professionals</li>
+                <li>Integrated enterprise SSO (OAuth 2.0) with healthcare-grade, role-based access</li>
+                <li>Architected HIPAA-compliant cloud pipelines and real-time patient dashboards</li>
+              </ul>
+              <div class="tag-row">
+                <span class="tag">Flutter</span><span class="tag">Conversational AI</span><span class="tag">OAuth 2.0</span><span class="tag">HIPAA</span><span class="tag">React</span>
+              </div>
             </div>
-            <div class="form-group">
-              <input type="text" id="form-subject" name="subject" class="form-input" />
-              <label for="form-subject" class="form-label">Subject</label>
+          </article>
+
+          <article class="tl-item" data-reveal>
+            <div class="tl-rail"><span class="tl-node"></span></div>
+            <div class="tl-body card">
+              <div class="tl-top">
+                <span class="tl-date mono">Feb 2021 — Jan 2022</span>
+                <span class="chip chip--domain">FinServ &amp; E-commerce</span>
+              </div>
+              <h3 class="tl-role">Senior Software Engineer</h3>
+              <p class="tl-company muted">Presidio · Coimbatore</p>
+              <ul class="tl-points">
+                <li>Delivered an <strong>AI-powered chatbot</strong> for a US banking portal (Vue, AWS Lex, Lambda)</li>
+                <li>Built high-traffic e-commerce platforms with PCI-DSS-compliant payment integrations</li>
+                <li>Developed real-time financial dashboards for US brokerages</li>
+              </ul>
+              <div class="tag-row">
+                <span class="tag">Vue.js</span><span class="tag">AWS Lex</span><span class="tag">Python</span><span class="tag">PCI-DSS</span>
+              </div>
             </div>
-            <div class="form-group">
-              <textarea id="form-message" name="message" class="form-textarea" rows="4" required></textarea>
-              <label for="form-message" class="form-label">Your Message</label>
-            </div>
-            <button type="submit" class="form-submit btn-submit">
-              <i data-lucide="send"></i>
-              Send Message
+          </article>
+
+          <div class="tl-more-wrap" data-reveal>
+            <button class="btn btn-ghost btn-sm" id="tl-more" aria-expanded="false">
+              Show earlier roles
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon"><polyline points="6 9 12 15 18 9"/></svg>
             </button>
+          </div>
+
+          <div class="tl-earlier" id="tl-earlier" hidden>
+
+            <article class="tl-item">
+              <div class="tl-rail"><span class="tl-node"></span></div>
+              <div class="tl-body card">
+                <div class="tl-top">
+                  <span class="tl-date mono">Apr 2019 — Jan 2021</span>
+                  <span class="chip chip--domain">Enterprise Consulting</span>
+                </div>
+                <h3 class="tl-role">Consultant</h3>
+                <p class="tl-company muted">Sirius Computer Solutions · Chennai</p>
+                <ul class="tl-points">
+                  <li>Built a B2B sports media seller platform (React, Terraform, AWS Kendra, AppSync)</li>
+                  <li>Led a team of 5 delivering a WebRTC-based online exam proctoring platform</li>
+                  <li>Modernized a legacy JSP virtual events platform to Vue.js with AWS Chime</li>
+                </ul>
+                <div class="tag-row">
+                  <span class="tag">React</span><span class="tag">Terraform</span><span class="tag">WebRTC</span><span class="tag">AWS</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="tl-item">
+              <div class="tl-rail"><span class="tl-node"></span></div>
+              <div class="tl-body card">
+                <div class="tl-top">
+                  <span class="tl-date mono">May 2017 — Mar 2019</span>
+                  <span class="chip chip--domain">Enterprise Solutions</span>
+                </div>
+                <h3 class="tl-role">Associate Consultant</h3>
+                <p class="tl-company muted">Sirius Computer Solutions · Chennai</p>
+                <ul class="tl-points">
+                  <li>Led cross-platform mobile and web apps for a Canadian rail transport client</li>
+                  <li>Automated CI/CD pipelines (Amplify, Docker); deployed Python REST APIs on Aurora</li>
+                  <li>Supported ML model integration and data pipeline architecture discussions</li>
+                </ul>
+                <div class="tag-row">
+                  <span class="tag">Ionic</span><span class="tag">Angular</span><span class="tag">Docker</span><span class="tag">Python</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="tl-item">
+              <div class="tl-rail"><span class="tl-node"></span></div>
+              <div class="tl-body card">
+                <div class="tl-top">
+                  <span class="tl-date mono">Jun 2015 — Apr 2017</span>
+                  <span class="chip chip--domain">Software Development</span>
+                </div>
+                <h3 class="tl-role">Software Engineer → Programmer Analyst Trainee</h3>
+                <p class="tl-company muted">Changepond Technologies · Chennai</p>
+                <ul class="tl-points">
+                  <li>Led a team of 4 building a large-scale e-commerce platform</li>
+                  <li>Developed interactive UI components and hardened application security</li>
+                </ul>
+                <div class="tag-row">
+                  <span class="tag">Java</span><span class="tag">JavaScript</span><span class="tag">SQL</span><span class="tag">jQuery</span>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ WORK / CASE STUDIES ═══════════════ -->
+    <section class="section" id="work">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="kicker mono"><span class="acc">04</span> / case studies</span>
+          <h2 class="section-title">Real impact.<br />Real <em class="serif">numbers</em>.</h2>
+        </div>
+
+        <article class="card feature-card" data-reveal>
+          <div class="feature-head">
+            <div>
+              <span class="mono dim feature-domain">iGaming &amp; Sports Betting</span>
+              <h3 class="feature-title">Presidio × DraftKings</h3>
+              <p class="feature-sub muted">A strategic partnership transforming mobile innovation</p>
+            </div>
+            <span class="chip chip--featured">Featured</span>
+          </div>
+          <p class="feature-desc">
+            High stakes, unexplored native territory, critical timelines. Through consistent delivery,
+            Presidio became integral to every major DraftKings release — from the Pick6 launch that opened
+            the door, to Project Flutie's massive Xamarin-to-native migration, to platform expansion across
+            Sportsbook, Casino, GNOG, Lottery, Predict, and Horse.
+          </p>
+          <div class="metric-row">
+            <div class="metric"><span class="metric-val"><span data-count="2">0</span>.5</span><span class="metric-label mono">years of partnership</span></div>
+            <div class="metric"><span class="metric-val"><span data-count="50">0</span>+</span><span class="metric-label mono">team, scaled from 4</span></div>
+            <div class="metric"><span class="metric-val"><span data-count="5">0</span></span><span class="metric-label mono">major releases</span></div>
+            <div class="metric"><span class="metric-val"><span data-count="100">0</span>%</span><span class="metric-label mono">release involvement</span></div>
+          </div>
+          <div class="feature-innovations">
+            <div class="innovation">
+              <h4>Mobile Platform Foundation</h4>
+              <p class="muted">Built the Shell App serving all products — PAM, navigation, universal linking, geolocation, observability.</p>
+            </div>
+            <div class="innovation">
+              <h4>Automation Framework</h4>
+              <p class="muted">Evolved from POC to full testing framework — UI, regression, smoke, and E2E.</p>
+            </div>
+            <div class="innovation">
+              <h4>Observability Revolution</h4>
+              <p class="muted">Adaptive analytics with OpenTelemetry — unified logging, zero vendor lock-in.</p>
+            </div>
+          </div>
+          <div class="tag-row">
+            <span class="tag">Swift</span><span class="tag">SwiftUI</span><span class="tag">TCA</span><span class="tag">OpenTelemetry</span><span class="tag">GeoFencing</span><span class="tag">CI/CD</span>
+          </div>
+        </article>
+
+        <article class="card feature-card" data-reveal>
+          <div class="feature-head">
+            <div>
+              <span class="mono dim feature-domain">Regulatory &amp; Compliance</span>
+              <h3 class="feature-title">Global Compliance Engine</h3>
+              <p class="feature-sub muted">Presidio × AWS ProServe × Trivelta</p>
+            </div>
+            <span class="chip chip--featured">Featured</span>
+          </div>
+          <p class="feature-desc">
+            Modernizing a B2B iGaming platform for regulatory readiness in Brazil, Spain, and Peru —
+            re-engineering mobile, web, and backend into scalable, modular, cloud-native architectures
+            with automated GLI compliance: code signatures, image hashing, and audit trails that make
+            regulator audits frictionless.
+          </p>
+          <div class="metric-row">
+            <div class="metric"><span class="metric-val"><span data-count="3">0</span></span><span class="metric-label mono">markets enabled</span></div>
+            <div class="metric"><span class="metric-val"><span data-count="2">0</span></span><span class="metric-label mono">GLI certifications</span></div>
+            <div class="metric"><span class="metric-val"><span data-count="3">0</span></span><span class="metric-label mono">platforms modernized</span></div>
+            <div class="metric"><span class="metric-val"><span data-count="100">0</span>%</span><span class="metric-label mono">cloud-native on AWS</span></div>
+          </div>
+          <div class="tag-row">
+            <span class="tag">AWS EKS</span><span class="tag">GLI-19/33</span><span class="tag">GitOps</span><span class="tag">Serverless</span><span class="tag">Microservices</span>
+          </div>
+        </article>
+
+        <div class="work-mini-grid">
+          <article class="card mini-card" data-reveal>
+            <span class="mono dim">Healthcare AI</span>
+            <h3>Pharma Conversational AI</h3>
+            <p class="muted">Conversational interface for a major pharma company's medical professionals — enterprise SSO, healthcare-grade access control.</p>
+            <div class="tag-row"><span class="tag">Conversational AI</span><span class="tag">OAuth 2.0</span></div>
+          </article>
+          <article class="card mini-card" data-reveal style="--i:1">
+            <span class="mono dim">Banking AI</span>
+            <h3>US Banking Chatbot</h3>
+            <p class="muted">AI-powered chatbot for a US banking customer portal, built on Vue, AWS Lex, and Lambda.</p>
+            <div class="tag-row"><span class="tag">AWS Lex</span><span class="tag">Vue</span><span class="tag">Lambda</span></div>
+          </article>
+          <article class="card mini-card" data-reveal style="--i:2">
+            <span class="mono dim">Mobile Engineering</span>
+            <h3>Xamarin → Native iOS</h3>
+            <p class="muted">Complete migration to Swift/SwiftUI with TCA — 3 apps migrated, 2 new products, reusable component libraries across product lines.</p>
+            <div class="tag-row"><span class="tag">Swift</span><span class="tag">TCA</span><span class="tag">SwiftUI</span></div>
+          </article>
+        </div>
+
+        <div class="skills-band" data-reveal>
+          <div class="skills-row">
+            <span class="skills-cat mono">leadership</span>
+            <div class="tag-row"><span class="tag">Team Management</span><span class="tag">1:1 Coaching</span><span class="tag">Career Planning</span><span class="tag">Sprint Planning</span><span class="tag">Skill-Will Matrices</span></div>
+          </div>
+          <div class="skills-row">
+            <span class="skills-cat mono">ai &amp; automation</span>
+            <div class="tag-row"><span class="tag">AI Adoption Strategy</span><span class="tag">Agent Design</span><span class="tag">Prompt Engineering</span><span class="tag">Token Optimization</span><span class="tag">Responsible AI</span></div>
+          </div>
+          <div class="skills-row">
+            <span class="skills-cat mono">architecture &amp; cloud</span>
+            <div class="tag-row"><span class="tag">AWS</span><span class="tag">Microservices</span><span class="tag">Serverless</span><span class="tag">Event-Driven</span><span class="tag">EKS</span><span class="tag">CloudFormation</span></div>
+          </div>
+          <div class="skills-row">
+            <span class="skills-cat mono">frontend &amp; mobile</span>
+            <div class="tag-row"><span class="tag">React</span><span class="tag">Vue</span><span class="tag">Swift / SwiftUI</span><span class="tag">Flutter</span><span class="tag">TypeScript</span></div>
+          </div>
+          <div class="skills-row">
+            <span class="skills-cat mono">devops &amp; quality</span>
+            <div class="tag-row"><span class="tag">CI/CD</span><span class="tag">GitOps / ArgoCD</span><span class="tag">Terraform</span><span class="tag">Helm</span><span class="tag">DORA Metrics</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ CONTACT ═══════════════ -->
+    <section class="section section-contact" id="contact">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="kicker mono"><span class="acc">05</span> / contact</span>
+          <h2 class="section-title">Let's build something<br /><em class="serif acc">extraordinary</em></h2>
+          <p class="section-sub">Got a team to scale, a platform to ship, or an AI strategy to figure out? My inbox is open.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-links">
+            <button class="card contact-link" id="copy-email" data-email="kousiksiddhu@gmail.com" data-reveal>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="icon contact-icon"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <span class="contact-link-body">
+                <span class="mono dim">email — click to copy</span>
+                <span class="contact-link-val">kousiksiddhu@gmail.com</span>
+              </span>
+              <span class="copy-state mono" id="copy-state">copy</span>
+            </button>
+            <a class="card contact-link" href="https://linkedin.com/in/siddhu-nallasivam" target="_blank" rel="noopener" data-reveal style="--i:1">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="icon contact-icon"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+              <span class="contact-link-body">
+                <span class="mono dim">linkedin</span>
+                <span class="contact-link-val">siddhu-nallasivam</span>
+              </span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon arrow-icon"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+            <a class="card contact-link" href="tel:+919384884604" data-reveal style="--i:2">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="icon contact-icon"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span class="contact-link-body">
+                <span class="mono dim">phone</span>
+                <span class="contact-link-val">+91 93848 84604</span>
+              </span>
+            </a>
+            <a class="card contact-link" href="assets/Siddhu-Nallasivam-Resume.pdf" download data-reveal style="--i:3">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="icon contact-icon"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              <span class="contact-link-body">
+                <span class="mono dim">resume — ats-friendly pdf</span>
+                <span class="contact-link-val">Download CV</span>
+              </span>
+            </a>
+          </div>
+
+          <form class="card contact-form" id="contact-form" data-reveal style="--i:2">
+            <input type="hidden" name="access_key" value="eaff1939-d194-434a-9f6b-fa27fab0bf90" />
+            <div class="form-row">
+              <div class="form-group">
+                <label for="f-name" class="mono">name</label>
+                <input type="text" id="f-name" name="name" required autocomplete="name" placeholder="Ada Lovelace" />
+              </div>
+              <div class="form-group">
+                <label for="f-email" class="mono">email</label>
+                <input type="email" id="f-email" name="email" required autocomplete="email" placeholder="ada@example.com" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="f-subject" class="mono">subject</label>
+              <input type="text" id="f-subject" name="subject" placeholder="Let's talk about…" />
+            </div>
+            <div class="form-group">
+              <label for="f-message" class="mono">message</label>
+              <textarea id="f-message" name="message" rows="5" required placeholder="Tell me about the problem you're solving."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit" id="form-submit">
+              Send message
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+            <p class="form-status mono" id="form-status" role="status"></p>
           </form>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <!-- ═══════════════════════════════════════════════ -->
-  <!-- FOOTER                                          -->
-  <!-- ═══════════════════════════════════════════════ -->
-  <footer class="footer" id="footer">
-    <div class="container">
-      <div class="footer-content">
-        <p class="footer-text">
-          Crafted with <span class="footer-heart">❤️</span> by Siddhu ·
-          <span id="footer-year">2026</span>
-        </p>
-      </div>
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="mono dim">© <span id="year">2026</span> Siddhu Nallasivam</span>
+      <span class="mono dim footer-center">designed &amp; shipped with an AI pair-programmer · zero templates</span>
+      <a href="#top" class="mono footer-top">back to top ↑</a>
     </div>
   </footer>
 
-  <!-- Main Script -->
-  <script type="module" src="/js/main.js"></script>
+  <!-- ═══════════════ COMMAND PALETTE ═══════════════ -->
+  <div class="palette-overlay" id="palette" role="dialog" aria-modal="true" aria-label="Command palette" hidden>
+    <div class="palette">
+      <div class="palette-search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="palette-input" placeholder="Type a command or search…" autocomplete="off" spellcheck="false" />
+        <span class="mono dim">esc</span>
+      </div>
+      <ul class="palette-list" id="palette-list" role="listbox"></ul>
+      <div class="palette-foot mono dim">
+        <span>↑↓ navigate</span><span>↵ select</span><span>⌘K toggle</span>
+      </div>
+    </div>
+  </div>
 
+  <script type="module" src="/js/main.js"></script>
 </body>
 
 </html>
