@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siddhu Nallasivam - Engineering Manager | Solutions Architect</title>
+    <meta name="description"
+        content="Engineering Manager and Solutions Architect with 11 years delivering scalable solutions across iGaming, healthcare, fintech, and e-commerce.">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&family=Inter:wght@400;500;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        body {
+            font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+            color: #1a1a1a;
+            background: #f5f5f5;
+            line-height: 1.5;
+            font-size: 10.5pt;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .resume {
+            max-width: 850px;
+            margin: 20px auto;
+            background: #ffffff;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+            padding: 36px 44px;
+        }
+
+        /* --- Header --- */
+        .header {
+            text-align: center;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #1a1a1a;
+            margin-bottom: 16px;
+        }
+
+        .header h1 {
+            font-family: 'Source Serif 4', 'Georgia', serif;
+            font-size: 24pt;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            color: #111;
+            margin-bottom: 4px;
+        }
+
+        .header .title {
+            font-size: 11.5pt;
+            font-weight: 600;
+            color: #333;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+
+        .contact-row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 6px 18px;
+            font-size: 9.5pt;
+            color: #444;
+        }
+
+        .contact-row a {
+            color: #1a5276;
+            text-decoration: none;
+        }
+
+        .divider {
+            color: #999;
+        }
+
+        /* --- Sections --- */
+        .section {
+            margin-bottom: 16px;
+        }
+
+        .section-title {
+            font-family: 'Source Serif 4', 'Georgia', serif;
+            font-size: 11pt;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #1a1a1a;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 2px;
+            margin-bottom: 10px;
+        }
+
+        /* --- Summary --- */
+        .summary p {
+            font-size: 10.2pt;
+            color: #2a2a2a;
+            line-height: 1.55;
+            text-align: justify;
+        }
+
+        /* --- Skills --- */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            row-gap: 5px;
+            font-size: 9.5pt;
+        }
+
+        .skill-category {
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+
+        .skill-items {
+            color: #333;
+        }
+
+        /* --- Experience --- */
+        .role-block {
+            margin-bottom: 16px;
+            page-break-inside: avoid;
+        }
+
+        .role-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 1px;
+        }
+
+        .role-title {
+            font-weight: 600;
+            font-size: 10.5pt;
+            color: #111;
+        }
+
+        .role-date {
+            font-size: 9.5pt;
+            color: #555;
+            white-space: nowrap;
+        }
+
+        .role-company {
+            font-size: 9.5pt;
+            color: #444;
+            font-style: italic;
+            margin-bottom: 5px;
+        }
+
+        .domain-label {
+            font-weight: 600;
+            font-size: 9.5pt;
+            color: #1a5276;
+            margin-top: 6px;
+            margin-bottom: 2px;
+        }
+
+        .role-block ul {
+            padding-left: 18px;
+            margin-top: 2px;
+        }
+
+        .role-block li {
+            font-size: 9.5pt;
+            color: #2a2a2a;
+            margin-bottom: 2px;
+            line-height: 1.42;
+        }
+
+        /* --- Education --- */
+        .edu-item {
+            margin-bottom: 6px;
+        }
+
+        .edu-item strong {
+            font-weight: 600;
+        }
+
+        .edu-item span {
+            color: #555;
+            font-size: 9.5pt;
+        }
+
+        /* --- Print --- */
+        @media print {
+            body {
+                background: #fff;
+                margin: 0;
+                padding: 0;
+            }
+
+            .resume {
+                box-shadow: none;
+                margin: 0;
+                padding: 15mm 14mm;
+                max-width: 100%;
+            }
+
+            .section {
+                margin-bottom: 12px;
+            }
+
+            .role-block {
+                margin-bottom: 12px;
+            }
+        }
+
+        /* No-break helper */
+        .nb {
+            page-break-inside: avoid;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="resume">
+
+        <!-- HEADER -->
+        <header class="header">
+            <h1>Siddhu Nallasivam</h1>
+            <div class="title">Associate Architect</div>
+            <div class="contact-row">
+                <span>Coimbatore, India</span>
+                <span class="divider">|</span>
+                <span>+91 9384884604</span>
+                <span class="divider">|</span>
+                <span><a href="mailto:kousiksiddhu@gmail.com">kousiksiddhu@gmail.com</a></span>
+                <span class="divider">|</span>
+                <span><a href="https://linkedin.com/in/siddhu-nallasivam/"
+                        target="_blank">linkedin.com/in/siddhu-nallasivam</a></span>
+            </div>
+        </header>
+
+        <!-- SUMMARY -->
+        <section class="section summary">
+            <h2 class="section-title">Professional Summary</h2>
+            <p>
+                Engineering leader with 11 years of experience shipping web, mobile, and cloud-native products across
+                regulated and high-growth industries — iGaming, healthcare, financial services, and e-commerce. I have
+                consistently owned end-to-end solution delivery: from scoping business requirements and defining system
+                architecture to managing engineering teams, navigating compliance frameworks, and coordinating
+                go-to-market timelines. Comfortable leading squads of 5–15 engineers, running sprint cadence, mentoring
+                leads, and making trade-off calls between speed, quality, and scalability. My strongest value is
+                translating ambiguous business problems into shippable, well-architected software that meets both
+                regulatory and commercial goals.
+            </p>
+        </section>
+
+        <!-- CORE COMPETENCIES -->
+        <section class="section">
+            <h2 class="section-title">Core Competencies</h2>
+            <div class="skills-grid">
+                <span class="skill-category">Leadership</span>
+                <span class="skill-items">Engineering Team Management · Sprint Planning &amp; Agile Delivery ·
+                    Cross-functional Collaboration · Stakeholder Communication · Technical Mentoring · Vendor
+                    Coordination</span>
+
+                <span class="skill-category">Business Domains</span>
+                <span class="skill-items">iGaming &amp; Sports Betting · Healthcare &amp; Life Sciences · Financial
+                    Services · E-commerce &amp; Retail · Media · Transportation &amp; Logistics</span>
+
+                <span class="skill-category">Architecture</span>
+                <span class="skill-items">Solution Design · Microservices · Serverless · RESTful APIs · Event-Driven
+                    Systems · Cloud-Native Strategies · Regulatory Compliance Architecture</span>
+
+                <span class="skill-category">Frontend</span>
+                <span class="skill-items">React · Vue.js · Angular · Swift / SwiftUI · Flutter · Ionic · TypeScript ·
+                    HTML5 / CSS3 / SCSS · ADA Compliance · Performance Optimization</span>
+
+                <span class="skill-category">Backend &amp; Cloud</span>
+                <span class="skill-items">Node.js · Python · AWS (Lambda, AppSync, Cognito, EKS, CloudFormation,
+                    Amplify, Lex, SageMaker) · Docker</span>
+
+                <span class="skill-category">DevOps &amp; Quality</span>
+                <span class="skill-items">CI/CD Pipelines · Jenkins · GitOps · Terraform · Argo CD · Helm · ESLint ·
+                    SonarQube · Unit
+                    Testing</span>
+            </div>
+        </section>
+
+        <!-- INDUSTRY EXPERIENCE -->
+        <section class="section">
+            <h2 class="section-title">Professional Experience</h2>
+
+            <!-- Company -->
+            <div class="role-block">
+                <div class="role-header">
+                    <span class="role-title">Associate Architect / Associate Delivery Manager / Solution Owner</span>
+                    <span class="role-date">Apr 2017 – Present</span>
+                </div>
+                <div class="role-company">Presidio · Chennai &amp; Coimbatore, India</div>
+                <p style="font-size:9.5pt; color:#2a2a2a; line-height:1.45; margin-bottom:4px;">
+                    Progressed from senior development roles to owning architecture and delivery for multi-million
+                    dollar client engagements. Currently leading engineering and compliance workstreams across
+                    international markets.
+                </p>
+            </div>
+
+            <!-- iGaming -->
+            <div class="role-block nb">
+                <div class="domain-label">iGaming &amp; Sports Betting</div>
+                <ul>
+                    <li>Spearheading GLI-19 and GLI-33 compliance certification efforts, building AWS-based regulatory
+                        systems that enabled market expansion into Brazil, Peru, and Spain alongside an established US
+                        foundation.</li>
+                    <li>Designed and delivered internal GitOps tooling (ArgoCD) for Helm release management and a
+                        compliance dashboard for ECR image approval workflows — reducing deployment overhead and
+                        streamlining audit-readiness across jurisdictions.</li>
+                    <li>Coordinating directly with Gaming Laboratories International (GLI) and cross-functional
+                        stakeholders to align technical implementation with evolving market-specific compliance
+                        standards.</li>
+                    <li>Developed the iOS native sports betting application (Swift, SwiftUI, TCA pattern), migrating
+                        from Xamarin and engineering reusable component libraries shared across multiple product lines.
+                    </li>
+                </ul>
+            </div>
+            <br /><br />
+            <br /><br />
+            <br /><br />
+            <br /><br />
+            <!-- Healthcare -->
+            <div class="role-block nb">
+                <div class="domain-label">Healthcare &amp; Life Sciences</div>
+                <ul>
+                    <li>Architected a modular Flutter mobile framework for a medical instruments company, enabling
+                        multiple licensed modules to be composed into a single shell application with on-demand delivery
+                        - reducing time-to-market for new instrument integrations.</li>
+                    <li>Built a conversational AI interface for a major pharma company's medical professionals using
+                        Vue.js, AWS Lex, and Amazon Connect, owning the full stack from infrastructure (CloudFormation,
+                        CodePipeline) to frontend delivery.</li>
+                    <li>Integrated enterprise SSO (OAuth 2.0) ensuring secure, role-based access aligned with healthcare
+                        data handling requirements.</li>
+                </ul>
+            </div>
+
+            <!-- Financial Services -->
+            <div class="role-block nb">
+                <div class="domain-label">Financial Services</div>
+                <ul>
+                    <li>Delivered an AI-powered chatbot for a US banking customer portal (Vue, AWS Lex, Lambda,
+                        Connect), enabling self-service account enquiries while meeting strict PII protection
+                        requirements through Ping Identity authentication and secure session management.</li>
+                    <li>Extended an enterprise asset management web application following highly regulated development
+                        protocols within AWS Workspaces, contributing to sprint planning and product roadmap
+                        improvement.</li>
+                </ul>
+            </div>
+
+            <!-- E-commerce & Retail -->
+            <div class="role-block nb">
+                <div class="domain-label">E-commerce &amp; Retail</div>
+                <ul>
+                    <li>Led a team of 4 engineers building and maintaining a large-scale e-commerce platform (WebSphere
+                        Commerce) for a major US-Canada online retailer — managing sprint ceremonies, task allocation,
+                        stakeholder demos, and content delivery via CoreMedia CMS.</li>
+                    <li>Developed B2B mobile and web applications for a US cutlery brand using Ionic, Angular, and AWS
+                        services, establishing pre-push quality gates (lint, test, format) that maintained 80% unit test
+                        coverage.</li>
+                </ul>
+            </div>
+
+            <!-- Media & Events -->
+            <div class="role-block nb">
+                <div class="domain-label">Media, Events &amp; EdTech</div>
+                <ul>
+                    <li>Built a B2B sports media seller platform (React, Terraform, AWS Kendra, AppSync) handling dual
+                        security layers for public and authenticated users — automated deployments via Jenkins with
+                        enforced code quality through SonarQube.</li>
+                    <li>Modernised a legacy JSP-based virtual events platform to Vue.js, integrating AWS Chime for
+                        real-time collaboration and implementing security hardening around token and cookie handling.
+                    </li>
+                    <li>Designed and led a team of 5 to deliver a WebRTC-based online examination proctoring platform
+                        (React, Node.js, Socket.IO) — owned the full lifecycle from wireframing (Adobe XD) to
+                        performance tuning for concurrent sessions.</li>
+                </ul>
+            </div>
+
+            <!-- Transport & IoT -->
+            <div class="role-block nb">
+                <div class="domain-label">Transportation &amp; Logistics</div>
+                <ul>
+                    <li>Led development of cross-platform mobile and web applications for a Canadian rail transport
+                        company, integrating SageMaker ML models and BlackBerry Radar IoT data for commodity tracking.
+                    </li>
+                    <li>Automated CI/CD pipelines (Amplify, Docker), deployed scalable Python REST APIs on Aurora
+                        Serverless, and established security vulnerability scanning across the codebase.</li>
+                </ul>
+            </div>
+
+        </section>
+
+        <!-- EDUCATION -->
+        <section class="section nb">
+            <h2 class="section-title">Education</h2>
+            <div class="edu-item">
+                <strong>Bachelor of Engineering</strong><br>
+                <span>Anna University Affiliated, Chennai</span>
+            </div>
+        </section>
+
+    </div>
+</body>
+
+</html>

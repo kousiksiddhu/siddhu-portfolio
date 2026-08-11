@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siddhu Nallasivam - Technical Engineering Manager</title>
+    <meta name="description"
+        content="Technical Engineering Manager with 11+ years driving delivery excellence, AI-enabled engineering, and team performance across iGaming, healthcare, fintech, and e-commerce.">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&family=Inter:wght@400;500;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        body {
+            font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+            color: #1a1a1a;
+            background: #f5f5f5;
+            line-height: 1.5;
+            font-size: 10.5pt;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .resume {
+            max-width: 850px;
+            margin: 20px auto;
+            background: #ffffff;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+            padding: 36px 44px;
+        }
+
+        /* --- Header --- */
+        .header {
+            text-align: center;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #1a1a1a;
+            margin-bottom: 16px;
+        }
+
+        .header h1 {
+            font-family: 'Source Serif 4', 'Georgia', serif;
+            font-size: 24pt;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            color: #111;
+            margin-bottom: 4px;
+        }
+
+        .header .title {
+            font-size: 11.5pt;
+            font-weight: 600;
+            color: #333;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+
+        .contact-row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 6px 18px;
+            font-size: 9.5pt;
+            color: #444;
+        }
+
+        .contact-row a {
+            color: #1a5276;
+            text-decoration: none;
+        }
+
+        .divider {
+            color: #999;
+        }
+
+        /* --- Sections --- */
+        .section {
+            margin-bottom: 16px;
+        }
+
+        .section-title {
+            font-family: 'Source Serif 4', 'Georgia', serif;
+            font-size: 11pt;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #1a1a1a;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 2px;
+            margin-bottom: 10px;
+        }
+
+        /* --- Summary --- */
+        .summary p {
+            font-size: 10.2pt;
+            color: #2a2a2a;
+            line-height: 1.55;
+            text-align: justify;
+        }
+
+        /* --- Impact Highlights --- */
+        .highlights-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6px 24px;
+            font-size: 9.5pt;
+            color: #2a2a2a;
+            margin-top: 4px;
+        }
+
+        .highlight-item {
+            display: flex;
+            align-items: baseline;
+            gap: 6px;
+        }
+
+        .highlight-metric {
+            font-weight: 700;
+            color: #1a5276;
+            white-space: nowrap;
+        }
+
+        /* --- Skills --- */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            row-gap: 5px;
+            font-size: 9.5pt;
+        }
+
+        .skill-category {
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+
+        .skill-items {
+            color: #333;
+        }
+
+        /* --- Experience --- */
+        .role-block {
+            margin-bottom: 16px;
+            page-break-inside: avoid;
+        }
+
+        .role-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 1px;
+        }
+
+        .role-title {
+            font-weight: 600;
+            font-size: 10.5pt;
+            color: #111;
+        }
+
+        .role-date {
+            font-size: 9.5pt;
+            color: #555;
+            white-space: nowrap;
+        }
+
+        .role-company {
+            font-size: 9.5pt;
+            color: #444;
+            font-style: italic;
+            margin-bottom: 5px;
+        }
+
+        .domain-label {
+            font-weight: 600;
+            font-size: 9.5pt;
+            color: #1a5276;
+            margin-top: 6px;
+            margin-bottom: 2px;
+        }
+
+        .role-block ul {
+            padding-left: 18px;
+            margin-top: 2px;
+        }
+
+        .role-block li {
+            font-size: 9.5pt;
+            color: #2a2a2a;
+            margin-bottom: 2px;
+            line-height: 1.42;
+        }
+
+        /* --- Education --- */
+        .edu-item {
+            margin-bottom: 6px;
+        }
+
+        .edu-item strong {
+            font-weight: 600;
+        }
+
+        .edu-item span {
+            color: #555;
+            font-size: 9.5pt;
+        }
+
+        /* --- Print --- */
+        @media print {
+            body {
+                background: #fff;
+                margin: 0;
+                padding: 0;
+            }
+
+            .resume {
+                box-shadow: none;
+                margin: 0;
+                padding: 15mm 14mm;
+                max-width: 100%;
+            }
+
+            .section {
+                margin-bottom: 12px;
+            }
+
+            .role-block {
+                margin-bottom: 12px;
+            }
+        }
+
+        /* No-break helper */
+        .nb {
+            page-break-inside: avoid;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="resume">
+
+        <!-- HEADER -->
+        <header class="header">
+            <h1>Siddhu Nallasivam</h1>
+            <div class="title">Technical Engineering Manager</div>
+            <div class="contact-row">
+                <span>Coimbatore, India</span>
+                <span class="divider">|</span>
+                <span>+91 9384884604</span>
+                <span class="divider">|</span>
+                <span><a href="mailto:kousiksiddhu@gmail.com">kousiksiddhu@gmail.com</a></span>
+                <span class="divider">|</span>
+                <span><a href="https://linkedin.com/in/siddhu-nallasivam/"
+                        target="_blank">linkedin.com/in/siddhu-nallasivam</a></span>
+            </div>
+        </header>
+
+        <!-- SUMMARY -->
+        <section class="section summary">
+            <h2 class="section-title">Professional Summary</h2>
+            <p>
+                Technical Engineering Manager with 11+ years driving delivery excellence,
+                AI-enabled engineering, and team performance across iGaming, healthcare, financial services,
+                and e-commerce. Accountable for end-to-end delivery assurance — from architecture strategy,
+                compliance governance, and AI adoption roadmaps to people management, client stakeholder
+                relationships, and delivery-led growth. Built and managed engineering teams of 5–15, owning
+                sprint predictability, quality outcomes, and team utilization. Defined and operationalized
+                AI-enabled development workflows — including AI agent design, skill creation, token
+                optimization strategies, and a purpose-built AI Development SDLC — to improve delivery
+                maturity across teams. Sustained 90%+ CSAT scores with 60% contract extensions by building
+                trusted advisor relationships and converting delivery credibility into account growth.
+            </p>
+        </section>
+
+        <!-- KEY IMPACT HIGHLIGHTS -->
+        <section class="section nb">
+            <h2 class="section-title">Key Impact Highlights</h2>
+            <div class="highlights-grid">
+                <div class="highlight-item">
+                    <span class="highlight-metric">90%+ CSAT</span>
+                    <span>across client engagements with zero critical escalations</span>
+                </div>
+                <div class="highlight-item">
+                    <span class="highlight-metric">60% Extensions</span>
+                    <span>contract renewals driven by delivery trust and growth signals</span>
+                </div>
+                <div class="highlight-item">
+                    <span class="highlight-metric">AI SDLC</span>
+                    <span>designed end-to-end AI Development lifecycle for engineering teams</span>
+                </div>
+                <div class="highlight-item">
+                    <span class="highlight-metric">5–15 Engineers</span>
+                    <span>managed with structured 1:1s, career plans, and performance coaching</span>
+                </div>
+                <div class="highlight-item">
+                    <span class="highlight-metric">6+ Domains</span>
+                    <span>iGaming, Healthcare, FinTech, Retail, Media, Transport</span>
+                </div>
+                <div class="highlight-item">
+                    <span class="highlight-metric">Multi-Market</span>
+                    <span>compliance delivery across US, Brazil, Peru, Spain, Canada</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- CORE COMPETENCIES -->
+        <section class="section">
+            <h2 class="section-title">Core Competencies</h2>
+            <div class="skills-grid">
+                <span class="skill-category">Leadership</span>
+                <span class="skill-items">Engineering Team Management · People Development &amp; Career Planning ·
+                    Sprint Predictability &amp; Agile Delivery · Performance Coaching &amp; Feedback Cycles ·
+                    Stakeholder Communication · Vendor Coordination · Utilization Management</span>
+
+                <span class="skill-category">AI &amp; Automation</span>
+                <span class="skill-items">AI Adoption Strategy &amp; Roadmapping · AI Agent Design &amp; Skill
+                    Creation · AI Development SDLC · Prompt Engineering &amp; Token Optimization ·
+                    AI Workflow Design · Responsible AI Practices · GenAI-Assisted Development</span>
+
+                <span class="skill-category">Consulting</span>
+                <span class="skill-items">Client Stakeholder Management · Delivery-Led Growth ·
+                    CSAT/NPS Outcome Ownership · Solution Proposals &amp; Architecture Assessments ·
+                    Business-Value Communication · Trusted Advisor Relationships</span>
+
+                <span class="skill-category">Architecture</span>
+                <span class="skill-items">Solution Design · Microservices · Serverless · RESTful APIs · Event-Driven
+                    Systems · Cloud-Native Strategies · Regulatory Compliance Architecture · NFR Mapping · Architecture
+                    Decision Records</span>
+
+                <span class="skill-category">Frontend</span>
+                <span class="skill-items">React · Vue.js · Angular · Swift / SwiftUI · Flutter · Ionic · TypeScript ·
+                    HTML5 / CSS3 / SCSS · ADA Compliance · Performance Optimization</span>
+
+                <span class="skill-category">Backend &amp; Cloud</span>
+                <span class="skill-items">Node.js · Python · AWS (Lambda, AppSync, Cognito, EKS, CloudFormation,
+                    Amplify, Lex, SageMaker) · Docker</span>
+
+                <span class="skill-category">DevOps &amp; Quality</span>
+                <span class="skill-items">CI/CD Pipelines · Jenkins · GitOps · Terraform · Argo CD · Helm · ESLint ·
+                    SonarQube · Unit Testing · Quality Gates · DORA-Aligned Practices</span>
+
+                <span class="skill-category">Business Domains</span>
+                <span class="skill-items">iGaming &amp; Sports Betting · Healthcare &amp; Life Sciences · Financial
+                    Services · E-commerce &amp; Retail · Media · Transportation &amp; Logistics</span>
+            </div>
+        </section>
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <!-- PROFESSIONAL EXPERIENCE -->
+        <section class="section">
+            <h2 class="section-title">Professional Experience</h2>
+
+            <!-- Company -->
+            <div class="role-block">
+                <div class="role-header">
+                    <span class="role-title">Associate Delivery Manager / Associate Architect</span>
+                    <span class="role-date">Apr 2017 – Present</span>
+                </div>
+                <div class="role-company">Presidio · Chennai &amp; Coimbatore, India</div>
+                <p style="font-size:9.5pt; color:#2a2a2a; line-height:1.45; margin-bottom:4px;">
+                    Progressed from senior development roles to owning architecture, delivery, people management,
+                    and AI enablement for multi-million dollar client engagements. Currently leading engineering
+                    and compliance workstreams across international markets while driving AI adoption strategy
+                    and team capability development.
+                </p>
+            </div>
+
+            <!-- People Management & Team Performance -->
+            <div class="role-block nb">
+                <div class="domain-label">People Management &amp; Team Performance</div>
+                <ul>
+                    <li>Managed engineering teams of 5–15 across concurrent engagements, owning goal alignment,
+                        staffing inputs, utilization tracking, and performance outcomes.</li>
+                    <li>Established structured people development cadence: weekly 1:1s for coaching and unblocking,
+                        monthly feedback cycles with self-reflection, quarterly skill-will matrix assessments and
+                        ratings calibration as pre-annual review, and formal annual performance reviews.</li>
+                    <li>Mentored and guided engineers from early-career uncertainty to full ownership — transforming
+                        individuals who struggled with client-facing confidence into domain owners leading end-to-end
+                        delivery independently.</li>
+                    <li>Developed targeted career plans addressing both soft skills (stakeholder communication,
+                        presentation confidence, conflict resolution) and technical ability (architecture thinking,
+                        cloud proficiency, AI adoption), resulting in measurable growth across the team.</li>
+                    <li>Identified skill gaps proactively and created capability development plans aligned to project
+                        needs, AI adoption targets, and individual career progression paths.</li>
+                    <li>Improved onboarding and ramp-up effectiveness through standardized documentation, buddy
+                        assignments, and knowledge transfer protocols — reducing time-to-productivity for new joiners.
+                    </li>
+                </ul>
+            </div>
+
+            <!-- AI Enablement & Engineering Transformation -->
+            <div class="role-block nb">
+                <div class="domain-label">AI Enablement &amp; Engineering Transformation</div>
+                <ul>
+                    <li>Defined and operationalized an AI Development SDLC — a structured lifecycle for planning,
+                        building, validating, and deploying AI-assisted engineering workflows across project teams.</li>
+                    <li>Conducted AI adoption strategy sessions across engagements, covering how AI can be leveraged
+                        across development, testing, documentation, and delivery reporting — addressing cost challenges,
+                        token consumption optimization, and responsible usage guardrails.</li>
+                    <li>Designed and built AI Agents and AI Skills for engineering workflows — including code review
+                        assistants, documentation generators, compliance validation tools, and sprint reporting
+                        automation.</li>
+                    <li>Created reusable AI workflow patterns and prompt libraries for repetitive project activities,
+                        improving team productivity and reducing manual effort in documentation and analysis tasks.</li>
+                    <li>Mentored engineers on safe and effective AI usage — establishing human-in-the-loop validation,
+                        data protection practices, and quality controls for all AI-generated output.</li>
+                    <li>Evaluated and strategized AI tooling adoption, balancing cost-efficiency (token consumption,
+                        API pricing) with delivery value and client policy compliance.</li>
+                </ul>
+            </div>
+
+            <!-- Client Impact & Delivery-Led Growth -->
+            <div class="role-block nb">
+                <div class="domain-label">Client Impact &amp; Delivery-Led Growth</div>
+                <ul>
+                    <li>Sustained 90%+ CSAT scores across the majority of client engagements through proactive risk
+                        communication, transparent delivery health reporting, and outcome-oriented stakeholder
+                        management.</li>
+                    <li>Achieved 60% contract extension rate across engagements — a direct signal of trusted advisor
+                        positioning, delivery credibility, and client willingness to expand scope.</li>
+                    <li>Maintained regular client communication on delivery health, risks, trade-offs, and value
+                        delivered — converting delivery insights into growth opportunities including automation,
+                        modernization, and managed services expansion.</li>
+                    <li>Led solution walkthroughs, architecture assessments, and demo sessions tied to client
+                        acceptance,
+                        adoption improvement, and stakeholder confidence building.</li>
+                    <li>Supported account teams with estimation inputs, proposal support, and value-add recommendations
+                        derived from active delivery experience.</li>
+                </ul>
+            </div>
+            <br /><br />
+            <br /><br />
+            <br /><br />
+
+            <!-- iGaming -->
+            <div class="role-block nb">
+                <div class="domain-label">iGaming &amp; Sports Betting</div>
+                <ul>
+                    <li>Spearheading GLI-19 and GLI-33 compliance certification efforts, building AWS-based regulatory
+                        systems that enabled market expansion into Brazil, Peru, and Spain alongside an established US
+                        foundation.</li>
+                    <li>Designed and delivered internal GitOps tooling (ArgoCD) for Helm release management and a
+                        compliance dashboard for ECR image approval workflows — reducing deployment overhead and
+                        streamlining audit-readiness across jurisdictions.</li>
+                    <li>Coordinating directly with Gaming Laboratories International (GLI) and cross-functional
+                        stakeholders to align technical implementation with evolving market-specific compliance
+                        standards — establishing trusted advisor credibility with the client compliance team.</li>
+                    <li>Developed the iOS native sports betting application (Swift, SwiftUI, TCA pattern), migrating
+                        from Xamarin and engineering reusable component libraries shared across multiple product lines.
+                    </li>
+                    <li>Leveraged AI workflows for compliance documentation generation and regulatory mapping,
+                        reducing manual documentation effort and improving audit preparation turnaround.</li>
+                </ul>
+            </div>
+
+            <!-- Healthcare -->
+            <div class="role-block nb">
+                <div class="domain-label">Healthcare &amp; Life Sciences</div>
+                <ul>
+                    <li>Architected a modular Flutter mobile framework for a medical instruments company, enabling
+                        multiple licensed modules to be composed into a single shell application with on-demand delivery
+                        — reducing time-to-market for new instrument integrations.</li>
+                    <li>Built a conversational AI interface for a major pharma company's medical professionals using
+                        Vue.js, AWS Lex, and Amazon Connect, owning the full stack from infrastructure (CloudFormation,
+                        CodePipeline) to frontend delivery.</li>
+                    <li>Integrated enterprise SSO (OAuth 2.0) ensuring secure, role-based access aligned with healthcare
+                        data handling requirements.</li>
+                    <li>Presented solution architecture and integration approach to client stakeholders, improving
+                        confidence in platform adoption and supporting positive CSAT outcomes.</li>
+                </ul>
+            </div>
+
+            <!-- Financial Services -->
+            <div class="role-block nb">
+                <div class="domain-label">Financial Services</div>
+                <ul>
+                    <li>Delivered an AI-powered chatbot for a US banking customer portal (Vue, AWS Lex, Lambda,
+                        Connect), enabling self-service account enquiries while meeting strict PII protection
+                        requirements through Ping Identity authentication and secure session management.</li>
+                    <li>Extended an enterprise asset management web application following highly regulated development
+                        protocols within AWS Workspaces, contributing to sprint planning and product roadmap
+                        improvement.</li>
+                    <li>Identified automation opportunities during delivery that contributed to scope expansion
+                        and follow-on engagement discussions.</li>
+                </ul>
+            </div>
+
+            <!-- E-commerce & Retail -->
+            <div class="role-block nb">
+                <div class="domain-label">E-commerce &amp; Retail</div>
+                <ul>
+                    <li>Led a team of 4 engineers building and maintaining a large-scale e-commerce platform (WebSphere
+                        Commerce) for a major US-Canada online retailer — managing sprint ceremonies, task allocation,
+                        stakeholder demos, and content delivery via CoreMedia CMS.</li>
+                    <li>Developed B2B mobile and web applications for a US cutlery brand using Ionic, Angular, and AWS
+                        services, establishing pre-push quality gates (lint, test, format) that maintained 80% unit test
+                        coverage.</li>
+                    <li>Owned client-facing demos and release walkthroughs, translating technical deliverables into
+                        business-value narratives for non-technical stakeholders.</li>
+                </ul>
+            </div>
+
+            <!-- Media & Events -->
+            <div class="role-block nb">
+                <div class="domain-label">Media, Events &amp; EdTech</div>
+                <ul>
+                    <li>Built a B2B sports media seller platform (React, Terraform, AWS Kendra, AppSync) handling dual
+                        security layers for public and authenticated users — automated deployments via Jenkins with
+                        enforced code quality through SonarQube.</li>
+                    <li>Modernised a legacy JSP-based virtual events platform to Vue.js, integrating AWS Chime for
+                        real-time collaboration and implementing security hardening around token and cookie handling.
+                    </li>
+                    <li>Designed and led a team of 5 to deliver a WebRTC-based online examination proctoring platform
+                        (React, Node.js, Socket.IO) — owned the full lifecycle from wireframing (Adobe XD) to
+                        performance tuning for concurrent sessions.</li>
+                </ul>
+            </div>
+
+            <br /><br />
+            <br /><br />
+            <br /><br />
+            <br /><br />
+
+
+            <!-- Transport & IoT -->
+            <div class="role-block nb">
+                <div class="domain-label">Transportation &amp; Logistics</div>
+                <ul>
+                    <li>Led development of cross-platform mobile and web applications for a Canadian rail transport
+                        company, integrating SageMaker ML models and BlackBerry Radar IoT data for commodity tracking.
+                    </li>
+                    <li>Automated CI/CD pipelines (Amplify, Docker), deployed scalable Python REST APIs on Aurora
+                        Serverless, and established security vulnerability scanning across the codebase.</li>
+                    <li>Supported client solution discussions on ML model integration and data pipeline architecture,
+                        contributing to scope clarity and delivery confidence.</li>
+                </ul>
+            </div>
+
+        </section>
+
+        <!-- EDUCATION -->
+        <section class="section nb">
+            <h2 class="section-title">Education</h2>
+            <div class="edu-item">
+                <strong>Bachelor of Engineering</strong><br>
+                <span>Anna University Affiliated, Chennai</span>
+            </div>
+        </section>
+
+    </div>
+</body>
+
+</html>
